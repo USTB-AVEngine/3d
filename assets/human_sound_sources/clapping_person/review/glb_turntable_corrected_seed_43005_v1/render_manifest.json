@@ -1,0 +1,37 @@
+{
+  "backend": "egl",
+  "bounds": [
+    [
+      -0.14001263678073883,
+      -0.45370277762413025,
+      -0.16888079047203064
+    ],
+    [
+      0.14164677262306213,
+      0.4520679712295532,
+      0.21695348620414734
+    ]
+  ],
+  "glb": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/pixal/pixal_seed_43005_v1/pixal_raw_1024.glb",
+  "schema": "avengine_glb_turntable_render_v1",
+  "sheet": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/turntable_sheet.png",
+  "size": 640,
+  "status": "passed",
+  "texture_sampling": {
+    "brightness": 1.35,
+    "filter": "linear",
+    "flip_v": true
+  },
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "triangle_count": 965587,
+  "vertex_count": 710677,
+  "views": [
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/front.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/right.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/back.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/left.png"
+  ]
+}

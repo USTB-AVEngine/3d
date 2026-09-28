@@ -1,0 +1,12 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "hand_drum_player_flux2_seed_43003_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/generation/flux2_seed_43003_v1/candidate.png",
+      "candidate_sha256": "26198b4aa15e8bb1b9fa93b5fe9c547b4274170cc5ae3335f6c9d60fe9fc6cae",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/segmentation/isnet_seed_43003_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/segmentation/isnet_seed_43003_v1/input_rgba_isnet.png"
+    }
+  ]
+}

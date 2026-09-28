@@ -1,0 +1,62 @@
+schema_version: "1.0"
+asset_id: "hssa_phone_call_v001"
+category: "phone_call"
+status: "planned_not_generated"
+
+image_generation:
+  model_family: "Flux2"
+  prompt_format: "plain_english_positive_prompt"
+  prompt_version: "v1"
+  prompt: >-
+    Full-body realistic studio image of one adult person actively talking on a smartphone call, mouth slightly open
+    mid-sentence, right hand holding a clearly visible modern smartphone against the right ear with the outer phone
+    surface still visible to the camera, free hand making a natural conversational gesture, attentive speaking
+    expression, relaxed balanced standing pose, natural human proportions, both hands and both feet visible,
+    three-quarter front-left view, entire person and complete phone inside the frame, clean light-gray studio
+    background, soft even lighting, sharp focus, clear connected foreground silhouette, no headset, no earbuds,
+    no bag, no furniture, no extra person, no text, no logo, no cropped body parts, no motion blur.
+  separate_negative_prompt_supported: "TBD_SERVER_CODE"
+  candidate_count: 12
+
+expected_visual_attributes:
+  human_count: 1
+  pose: "active phone conversation, not looking at or merely holding a phone"
+  facial_action: "mouth slightly open in speech"
+  attached_object: "one smartphone visibly contacting the ear"
+  interaction: "phone orientation and gripping fingers are readable"
+  camera: "three-quarter front-left, full body, phone side visible"
+  segmentation_unit: "human and phone in one foreground mask"
+
+rejection_criteria:
+  - "phone absent, hidden entirely by hand, or merged into head"
+  - "person looking at screen instead of making a call"
+  - "hand near ear without a visible phone"
+  - "cropped fingers, phone, head, or feet"
+  - "extra person, headset, furniture, text, or logos"
+
+pixal3d_risk:
+  level: "high"
+  critical_regions: ["phone edge", "phone-ear gap", "gripping hand", "mouth"]
+  notes: "The phone is small and close to the face, so it may disappear or fuse into the head."
+
+sound_anchors:
+  acoustic_anchor_local_speech:
+    id: "mouth"
+    planned_type: "local_surface_point"
+    target_region: "mouth center"
+    directivity: "forward_from_face"
+  acoustic_anchor_remote_speech:
+    id: "phone_speaker"
+    planned_type: "local_surface_point"
+    target_region: "smartphone earpiece/speaker region"
+    directivity: "outward_from_phone_speaker"
+  visual_cue_anchor:
+    id: "phone_body"
+    planned_type: "local_surface_point"
+    target_region: "smartphone body center"
+  fallback_anchor:
+    id: "asset_root"
+    planned_type: "asset_origin"
+
+metadata_path: "metadata/asset_metadata.yaml"
+

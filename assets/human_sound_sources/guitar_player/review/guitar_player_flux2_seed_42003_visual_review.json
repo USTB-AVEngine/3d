@@ -1,0 +1,39 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "guitar_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/generation/flux2_seed_42003_v1/candidate.png",
+    "sha256": "a39c2a4819d51a6e2b6bf21e57e5f7dd4dfd36244b894fa239ab97d0871b9bf1",
+    "size_bytes": 1279229
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/generation/flux2_seed_42003_v1/generation_manifest.json",
+    "sha256": "2ce23d1fc83e2546a0a221374e8b5019ec736045f15dd584245b97086728de0f"
+  },
+  "reviewed_at": "2026-09-21T02:51:08.4520520Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "guitar_complete": "passed",
+    "playing_action_unambiguous": "passed",
+    "strumming_hand_at_sound_hole": "passed",
+    "fretting_hand_on_neck": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "guitar_sound_hole",
+    "visual_cue_anchor": "guitar_playing_region",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "The guitar body overlaps the torso and may partially fuse during single-view reconstruction.",
+    "Strings and tuning hardware may not survive image-to-3D reconstruction."
+  ],
+  "dataset_notes": [
+    "Approved as the male baseline; identity diversity is deferred to expansion variants."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

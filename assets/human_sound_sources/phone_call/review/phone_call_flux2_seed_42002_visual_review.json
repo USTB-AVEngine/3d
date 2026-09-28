@@ -1,0 +1,41 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "phone_call",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/generation/flux2_seed_42002_v1/candidate.png",
+    "sha256": "7008a0cb530fa5bf1e55b799d57312158f5d9545295741dd8de3656b556826f7",
+    "size_bytes": 1306765
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/generation/flux2_seed_42002_v1/generation_manifest.json",
+    "sha256": "0c2dcb8f0eba4e560bffd9da2967753a4dedff79cc878e37b6de25492eda2c4d"
+  },
+  "reviewed_at": "2026-09-21T02:51:08.4520520Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "phone_call_action_unambiguous": "passed",
+    "mouth_open_mid_speech": "passed",
+    "smartphone_present": "passed",
+    "smartphone_at_ear": "passed",
+    "phone_hand_binding": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "mouth",
+    "remote_voice_anchor": "phone_speaker",
+    "visual_cue_anchor": "phone_body",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "The smartphone contacts the hand and cheek and may fuse during single-view reconstruction.",
+    "The phone speaker is too small to recover geometrically and will require a semantic mesh-local anchor."
+  ],
+  "dataset_notes": [
+    "Approved as the male baseline; identity diversity is deferred to expansion variants."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

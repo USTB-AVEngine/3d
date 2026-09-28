@@ -1,0 +1,34 @@
+{
+  "failed_count": 0,
+  "jobs": [
+    {
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/segmentation/isnet_seed_43012_v1/alpha_isnet.png",
+      "alpha_sha256": "85591b14a9634e5302690676effe57daa966b77621f3597d8adfc32bbaa354a7",
+      "foreground_bbox_xyxy": [
+        328,
+        48,
+        791,
+        1005
+      ],
+      "foreground_fraction_at_128": 0.1688995361328125,
+      "instance_id": "flute_player_flux2_seed_43012_v1",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/segmentation/isnet_seed_43012_v1/input_rgba_isnet.png",
+      "rgba_sha256": "63e6b5dcec00fdf5c5b4a81de1c9ecc6a87f060e784efeb46fe3ae086340e50e",
+      "status": "passed",
+      "wall_seconds": 1.3650503638200462
+    }
+  ],
+  "model": {
+    "name": "isnet-general-use",
+    "path": "/data/models/rembg/isnet-general-use/isnet-general-use.onnx",
+    "sha256": "60920e99c45464f2ba57bee2ad08c919a52bbf852739e96947fbb4358c0d964a"
+  },
+  "model_load_seconds": 0.8300015400163829,
+  "passed_count": 1,
+  "schema": "avengine_controlled_animal_isnet_status_v1",
+  "status": "passed"
+}

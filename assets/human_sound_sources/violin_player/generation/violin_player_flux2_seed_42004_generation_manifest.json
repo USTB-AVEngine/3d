@@ -1,0 +1,38 @@
+{
+  "asset_id": "violin_player",
+  "created_at": "2026-09-21T02:18:31.500400+00:00",
+  "effective_prompt": "A single adult violinist actively playing a violin, full body visible from head to feet, three-quarter front view, violin correctly supported beneath the chin on the left shoulder, left hand pressing the fingerboard, right hand holding a complete straight bow in visible contact with the strings near the bridge, unmistakable performance posture, violin body and bow clearly separated from clothing and background, anatomically plausible hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background with strong edge contrast around the bow, centered complete subject and instrument, photorealistic, high detail Avoid: multiple people, viola, cello, guitar, violin case, merely holding violin, bow missing, broken bow, bow away from strings, incorrect instrument pose, cropped bow, cropped violin, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, viola, cello, guitar, violin case, merely holding violin, bow missing, broken bow, bow away from strings, incorrect instrument pose, cropped bow, cropped violin, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/generation/flux2_seed_42004_v1/candidate.png",
+    "sha256": "a194cc9a1e0c19996a60b23aaf3db8f3923330b42a5bc454d148893ac5a47669",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1047014
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/generation/flux2_seed_42004_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single adult violinist actively playing a violin, full body visible from head to feet, three-quarter front view, violin correctly supported beneath the chin on the left shoulder, left hand pressing the fingerboard, right hand holding a complete straight bow in visible contact with the strings near the bridge, unmistakable performance posture, violin body and bow clearly separated from clothing and background, anatomically plausible hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background with strong edge contrast around the bow, centered complete subject and instrument, photorealistic, high detail",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "15082924579352ea5f706bb783405a428c04596564acfee1e737594bc08325c9"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 42004,
+  "status": "pending_visual_review"
+}

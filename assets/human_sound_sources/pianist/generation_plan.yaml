@@ -1,0 +1,56 @@
+schema_version: "1.0"
+asset_id: "hssa_pianist_v001"
+category: "pianist"
+status: "planned_not_generated"
+
+image_generation:
+  model_family: "Flux2"
+  prompt_format: "plain_english_positive_prompt"
+  prompt_version: "v1"
+  prompt: >-
+    Realistic studio image of one adult pianist actively playing a compact digital piano with a complete keyboard and
+    built-in speaker body, seated naturally on a simple backless bench, both hands visibly pressing different groups of
+    keys, wrists and elbows in a credible playing posture, focused performance expression, both feet visible below the
+    keyboard, natural human proportions, side three-quarter view showing the face, both hands, full keyboard, piano body,
+    support legs and bench, entire human and instrument inside the frame, clean light-gray studio background, soft even
+    lighting, sharp focus, clear connected foreground silhouette, no grand-piano lid, no sheet-music stand, no extra
+    person, no cables, no text, no logo, no cropped keyboard, hands, feet, bench, or instrument, no motion blur.
+  separate_negative_prompt_supported: "TBD_SERVER_CODE"
+  candidate_count: 12
+
+expected_visual_attributes:
+  human_count: 1
+  pose: "seated active two-hand keyboard performance"
+  attached_object: "compact digital piano/keyboard and simple bench"
+  interaction: "both hands visibly contact keys; torso oriented toward keyboard"
+  camera: "side three-quarter, full human and full instrument"
+  segmentation_unit: "human, bench, and piano in one foreground mask"
+
+rejection_criteria:
+  - "one or both hands away from keys"
+  - "keyboard, bench, feet, hands, or piano body cropped"
+  - "hands merged into keys or hidden behind the instrument"
+  - "pose reads as sitting beside the piano rather than playing"
+  - "grand-piano lid, music stand, extra person, cables, text, or logos"
+
+pixal3d_risk:
+  level: "very_high"
+  critical_regions: ["both hands", "keyboard", "human-piano occlusion", "bench", "support legs"]
+  notes: "The asset has a large footprint and extensive occlusion. A compact keyboard is chosen to reduce hidden geometry."
+
+sound_anchors:
+  acoustic_anchor:
+    id: "piano_body"
+    planned_type: "local_surface_point"
+    target_region: "piano body center or built-in speaker panel"
+    directivity: "broad_forward"
+  visual_cue_anchor:
+    id: "keyboard_hands"
+    planned_type: "local_surface_point"
+    target_region: "center of the actively played key region"
+  fallback_anchor:
+    id: "asset_root"
+    planned_type: "asset_origin"
+
+metadata_path: "metadata/asset_metadata.yaml"
+

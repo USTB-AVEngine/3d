@@ -1,0 +1,38 @@
+{
+  "asset_id": "flute_player",
+  "created_at": "2026-09-27T17:23:10.872993+00:00",
+  "effective_prompt": "A single poised East Asian female concert flutist in her late twenties with a low braided bun, visibly blowing across the embouchure hole of one long thin silver transverse concert flute, full body visible from head to feet, eye-level three-quarter front view. The flute is held perfectly horizontal at mouth level, extending sideways from her lips toward the right side of the image, perpendicular to her upright torso, with the complete headjoint, long cylindrical key body and footjoint visible as one straight unbroken silver tube. Her lower lip touches the embouchure plate, both arms are raised, left hand supports the keys close to her face and right hand presses a separate key region farther along the tube, elbows clearly away from the torso. She wears a fitted emerald jacquard blouse with subtle embroidered cuffs, high-waisted black tailored trousers, matte black low-heel ankle boots, a narrow black waist belt, a small jade hairpin and tiny pearl stud earrings. Refined realistic textile detail without loose fabric, unmistakable active transverse-flute performance pose, soft neutral three-point studio lighting, plain warm light-gray background, centered complete person and entire horizontal flute with generous side margins, photorealistic, high detail, natural anatomy. Avoid: multiple people, generic middle-aged man, black T-shirt, vertical flute, diagonal flute, flute held at chest, flute below chin, mouth away from flute, merely holding flute, recorder, clarinet, oboe, bamboo flute, thick wooden instrument, mouthpiece inside mouth, missing flute end, bent flute, broken tube, cropped instrument, instrument pointing toward camera, low contrast instrument, lowered elbows, seated pose, music stand, long earrings, loose necklace, long scarf, transparent clothing, cropped head, cropped feet, extra limbs, extra fingers, fused hands, fused flute, deformed anatomy, room interior, stage, audience, text, logo, watermark, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, generic middle-aged man, black T-shirt, vertical flute, diagonal flute, flute held at chest, flute below chin, mouth away from flute, merely holding flute, recorder, clarinet, oboe, bamboo flute, thick wooden instrument, mouthpiece inside mouth, missing flute end, bent flute, broken tube, cropped instrument, instrument pointing toward camera, low contrast instrument, lowered elbows, seated pose, music stand, long earrings, loose necklace, long scarf, transparent clothing, cropped head, cropped feet, extra limbs, extra fingers, fused hands, fused flute, deformed anatomy, room interior, stage, audience, text, logo, watermark, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43012_v1/candidate.png",
+    "sha256": "955c97f744ee430ddf4b667e704747cd0de22291166ebe70130bea47cce89f98",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1320853
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43012_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single poised East Asian female concert flutist in her late twenties with a low braided bun, visibly blowing across the embouchure hole of one long thin silver transverse concert flute, full body visible from head to feet, eye-level three-quarter front view. The flute is held perfectly horizontal at mouth level, extending sideways from her lips toward the right side of the image, perpendicular to her upright torso, with the complete headjoint, long cylindrical key body and footjoint visible as one straight unbroken silver tube. Her lower lip touches the embouchure plate, both arms are raised, left hand supports the keys close to her face and right hand presses a separate key region farther along the tube, elbows clearly away from the torso. She wears a fitted emerald jacquard blouse with subtle embroidered cuffs, high-waisted black tailored trousers, matte black low-heel ankle boots, a narrow black waist belt, a small jade hairpin and tiny pearl stud earrings. Refined realistic textile detail without loose fabric, unmistakable active transverse-flute performance pose, soft neutral three-point studio lighting, plain warm light-gray background, centered complete person and entire horizontal flute with generous side margins, photorealistic, high detail, natural anatomy.",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "9a85e3ee1c6d4a3070d91b7e5b59e3abdc93fba75947789b6b44031077e8961b"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 43012,
+  "status": "pending_visual_review"
+}

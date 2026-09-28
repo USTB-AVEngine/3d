@@ -1,0 +1,68 @@
+{
+  "asset_id": "guitar_player",
+  "forward_axis": "-Z",
+  "geometry_preserved": true,
+  "output": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\guitar_player\\runtime\\standardized_seed_42003_v1\\model.glb",
+    "sha256": "7a3756cc4c6ec6e501c167218e59bb4ab65cd2a9285cd1e28a967f497be7c479",
+    "size_bytes": 38704176
+  },
+  "schema": "human_sound_source_glb_standardization_v1",
+  "source": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\guitar_player\\pixal\\pixal_seed_42003_v1\\pixal_raw_1024.glb",
+    "sha256": "fbbfe1a32cd0684e07f53c0830c004a8519919b04d6191fea48b090524ee6e80"
+  },
+  "standardization": {
+    "material_changes": [
+      {
+        "after": {
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.8
+        },
+        "before": {
+          "metallicFactor": 1.0,
+          "roughnessFactor": 1.0
+        },
+        "material_index": 0
+      }
+    ],
+    "normalized_bounds_m": {
+      "max": [
+        0.5089800071777866,
+        1.75,
+        0.3523254627002209
+      ],
+      "min": [
+        -0.5089800071777866,
+        0.0,
+        -0.3523254627002209
+      ]
+    },
+    "root_node_index": 2,
+    "scale": 1.9476962257248023,
+    "source_bounds": {
+      "max": [
+        0.267789363861084,
+        0.4537997841835022,
+        0.16334986686706543
+      ],
+      "min": [
+        -0.2548588812351227,
+        -0.44469761848449707,
+        -0.19843700528144836
+      ]
+    },
+    "translation": [
+      -0.01259232610369248,
+      0.866135873111063,
+      0.03416954353058868
+    ]
+  },
+  "status": "passed",
+  "target_height_m": 1.75,
+  "texture_payloads_preserved": true,
+  "trailing_chunk_sha256": [
+    "57d9c0eb86d599f879c848b81a60dd68974058b716ca06d4c60918b9ade3d5ea"
+  ],
+  "up_axis": "+Y"
+}

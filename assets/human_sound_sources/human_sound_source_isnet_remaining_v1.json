@@ -1,0 +1,33 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "phone_call_flux2_seed_42002_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/generation/flux2_seed_42002_v1/candidate.png",
+      "candidate_sha256": "7008a0cb530fa5bf1e55b799d57312158f5d9545295741dd8de3656b556826f7",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/segmentation/isnet_seed_42002_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/segmentation/isnet_seed_42002_v1/input_rgba_isnet.png"
+    },
+    {
+      "instance_id": "guitar_player_flux2_seed_42003_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/generation/flux2_seed_42003_v1/candidate.png",
+      "candidate_sha256": "a39c2a4819d51a6e2b6bf21e57e5f7dd4dfd36244b894fa239ab97d0871b9bf1",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/segmentation/isnet_seed_42003_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/segmentation/isnet_seed_42003_v1/input_rgba_isnet.png"
+    },
+    {
+      "instance_id": "violin_player_flux2_seed_42004_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/generation/flux2_seed_42004_v1/candidate.png",
+      "candidate_sha256": "a194cc9a1e0c19996a60b23aaf3db8f3923330b42a5bc454d148893ac5a47669",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/segmentation/isnet_seed_42004_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/segmentation/isnet_seed_42004_v1/input_rgba_isnet.png"
+    },
+    {
+      "instance_id": "pianist_flux2_seed_42005_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/generation/flux2_seed_42005_v1/candidate.png",
+      "candidate_sha256": "95d4bfe2bde8e5cdc5f4332721ea311ab4c0bcd04c153de8594904856fdea372",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/input_rgba_isnet.png"
+    }
+  ]
+}

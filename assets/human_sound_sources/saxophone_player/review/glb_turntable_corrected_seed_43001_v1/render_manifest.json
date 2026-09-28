@@ -1,0 +1,37 @@
+{
+  "backend": "egl",
+  "bounds": [
+    [
+      -0.17865915596485138,
+      -0.45402640104293823,
+      -0.14077988266944885
+    ],
+    [
+      0.17590031027793884,
+      0.45063984394073486,
+      0.19401927292346954
+    ]
+  ],
+  "glb": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/pixal/pixal_seed_43001_v1/pixal_raw_1024.glb",
+  "schema": "avengine_glb_turntable_render_v1",
+  "sheet": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/turntable_sheet.png",
+  "size": 640,
+  "status": "passed",
+  "texture_sampling": {
+    "brightness": 1.35,
+    "filter": "linear",
+    "flip_v": true
+  },
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "triangle_count": 958236,
+  "vertex_count": 709176,
+  "views": [
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/front.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/right.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/back.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/left.png"
+  ]
+}

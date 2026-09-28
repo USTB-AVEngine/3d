@@ -1,0 +1,33 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "flute_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43002_v1/candidate.png",
+    "sha256": "789444ec0c099bec6f5b2e8e72c08658c65a6c12137b7336c49865a9060d4a1b",
+    "size_bytes": 1286412
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43002_v1/generation_manifest.json",
+    "sha256": "74f5ae143bf70dd9b4c9c615f108adac046a72cf71bb59bc7c7793723d125c63"
+  },
+  "reviewed_at": "2026-09-28T00:00:00+08:00",
+  "decision": "rejected_before_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "instrument_complete": "passed_with_condition",
+    "active_transverse_flute_action": "failed",
+    "embouchure_at_lips": "failed",
+    "horizontal_flute_pose": "failed",
+    "both_hands_on_keys": "passed"
+  },
+  "rejection_reasons": [
+    "The instrument is held diagonally at chest level rather than horizontally at mouth level.",
+    "The embouchure is away from the lips, so the person is not visibly playing.",
+    "The instrument reads as a flute-recorder hybrid rather than a transverse concert flute."
+  ],
+  "replacement_seed": 43012,
+  "next_gate": "regenerate_flux2_candidate"
+}

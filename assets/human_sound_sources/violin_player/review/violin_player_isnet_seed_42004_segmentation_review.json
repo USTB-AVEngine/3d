@@ -1,0 +1,32 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "violin_player",
+  "instance_id": "violin_player_flux2_seed_42004_v1",
+  "reviewed_at": "2026-09-21T03:05:00Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "034fc973b39e4995fcc0578f91e40451ca76a78bc3d339e43bac2fb15e5678aa",
+    "foreground_fraction_at_128": 0.1696615219116211,
+    "foreground_bbox_xyxy": [274, 47, 782, 1013]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/segmentation/isnet_seed_42004_v1/input_rgba_isnet.png",
+    "sha256": "0e4c25f53f9716163db4e3c6190190ff373d59e43279aafe3865dad0a30b9872",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "violin_body_and_neck_preserved": "passed",
+    "bow_preserved": "passed",
+    "playing_hand_relations_preserved": "passed",
+    "feet_complete": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "The bow is preserved but remains a thin high-risk structure for reconstruction.",
+    "The lower shoe edge is close to the image boundary but remains present."
+  ],
+  "pixal_parameters": {"resolution": 1024, "manual_fov": 0.2, "low_vram": false, "seed": 42004},
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

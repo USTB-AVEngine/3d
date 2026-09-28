@@ -1,0 +1,41 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "coughing_person",
+  "seed": 43006,
+  "reviewed_at": "2026-09-28T07:15:06.1507421Z",
+  "decision": "accept_with_conditions",
+  "source": {
+    "glb_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/pixal/pixal_seed_43006_v1/pixal_raw_1024.glb",
+    "glb_sha256": "05459a0b2fe9cdf4639d58518cb7cc0bcc2c57d2f1fa4b5e9260b42e008eadab",
+    "structural_validation_sha256": "bc1e3f2cfe59655f0adcf38390d0fbd289e8e480912c2151f21b415020092ff6"
+  },
+  "turntable": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/review/glb_turntable_corrected_seed_43006_v1/turntable_sheet.png",
+    "sha256": "027f100c2b187a6510ae0c087697c800ed7ede606a72409123be7e39422ad052",
+    "render_manifest_sha256": "b9c71e7731bd5c4d37b234152cd9c0e08b4f2428e88c135eeef160ff599353cd"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "material_count": 1,
+    "texture_count": 2,
+    "vertex_count": 698150,
+    "triangle_count": 949661,
+    "texture_size": [4096, 4096]
+  },
+  "checks": {
+    "identity_and_wardrobe_readable": "passed",
+    "full_body_complete": "passed",
+    "open_mouth_and_coughing_pose_readable": "passed",
+    "face_not_occluded": "passed",
+    "bag_and_strap_present": "passed",
+    "four_view_texture_consistency": "passed",
+    "texture_noise_absent": "passed",
+    "fist_and_mouth_separation": "passed_with_condition"
+  },
+  "conditions": [
+    "The fist and mouth region is locally simplified but remains visually separate and readable.",
+    "The bag, strap and jacket contain minor fused geometry.",
+    "Use as a static medium-distance semantic sound-source asset."
+  ],
+  "next_gate": "runtime_standardization_then_habitat_level_0"
+}

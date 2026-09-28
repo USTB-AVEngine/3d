@@ -1,0 +1,43 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "hand_drum_player",
+  "seed": 43003,
+  "reviewed_at": "2026-09-28T03:37:07.1107817Z",
+  "decision": "accept_with_conditions",
+  "source": {
+    "glb_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/pixal/pixal_seed_43003_v1/pixal_raw_1024.glb",
+    "glb_sha256": "f834cb60d462953b30d6c165437b6ef575792d3d3b89da75b7b49cdb87d12872",
+    "structural_validation_sha256": "d6858e6df068a73441f662b1cb8b22fc513a1755ba912081fdf8df22677d2b6a"
+  },
+  "turntable": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/review/glb_turntable_corrected_seed_43003_v1/turntable_sheet.png",
+    "sha256": "ded0624c7de16638d0cac2bf4f4aa519670e77b5b21f3a221306dcbf9ef5abad",
+    "render_manifest_sha256": "4f1a64f658551adc7aa20ee363c3798dafe73ac5dd6ddcbac933bbe95e6242b5",
+    "texture_flip_v": true,
+    "texture_filter": "linear"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "material_count": 1,
+    "texture_count": 2,
+    "vertex_count": 721625,
+    "triangle_count": 992470,
+    "texture_size": [4096, 4096]
+  },
+  "checks": {
+    "identity_and_wardrobe_readable": "passed",
+    "djembe_and_playing_pose_readable": "passed",
+    "full_seated_body_present": "passed",
+    "drumhead_and_rope_body_present": "passed",
+    "four_view_texture_consistency": "passed",
+    "texture_noise_absent": "passed",
+    "stool_and_boot_geometry": "passed_with_condition",
+    "detached_fragments": "passed_with_condition"
+  },
+  "conditions": [
+    "Small detached fragments are visible in the side views and are accepted for this speed-prioritized batch.",
+    "The stool feet, boots and lower drum support contain local fusion and stretching.",
+    "Use as a static semantic sound-source asset; avoid close-up presentation."
+  ],
+  "next_gate": "runtime_standardization_then_habitat_level_0"
+}

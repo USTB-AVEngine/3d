@@ -1,0 +1,37 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "megaphone_speaker",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/megaphone_speaker/generation/flux2_seed_43004_v1/candidate.png",
+    "sha256": "066764a0d903828480827fbb448f9a878bf0f570973c22aaa84bce8c891be1a3",
+    "size_bytes": 1378252
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/megaphone_speaker/generation/flux2_seed_43004_v1/generation_manifest.json",
+    "sha256": "cd4f860d2e4d3fd61cc31cc4c84c7729dc6835b543afef20e8c519fe73a96ed5"
+  },
+  "reviewed_at": "2026-09-28T03:40:45.5475037Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "megaphone_complete": "passed",
+    "mouth_at_megaphone_mouthpiece": "passed",
+    "speaking_action_unambiguous": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "megaphone_bell_center",
+    "visual_cue_anchor": "open_mouth_at_megaphone_mouthpiece",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "Both hands overlap near the handle and may partially merge during reconstruction.",
+    "The thin trigger and handle details may be simplified."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

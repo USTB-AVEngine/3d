@@ -1,0 +1,134 @@
+schema_version: "1.0"
+checked_at: "2026-09-20T12:20:25+08:00"
+recovery_status: "blocked"
+
+constraints:
+  blender_install_allowed: false
+  habitat_work_allowed: false
+  avengine_work_allowed: false
+  create_asset_directory_only_after_source_obtained: true
+
+existing_blocked_asset:
+  asset_id: "human_singer_microphone_001"
+  acquisition_manifest: "human_singer_microphone_001/source/acquisition.yaml"
+  status: "blocked"
+  reason:
+    - "The original GLB is not present locally."
+    - "No Sketchfab access token is configured."
+    - "External network approval returned HTTP 503 before the request reached Sketchfab."
+  checksum_sha256: null
+
+recovery_attempt:
+  method: "official_sketchfab_api_then_official_download_endpoint"
+  request_reached_provider: false
+  result: "blocked_before_request"
+  failure_layer: "network_approval_review"
+  failure_detail: "HTTP 503 from the approval reviewer; this is not a Sketchfab response."
+  unknown_mirror_used: false
+
+local_search:
+  roots_checked:
+    - "C:/Users/17738/Downloads"
+    - "C:/Users/17738/Desktop"
+    - "C:/Users/17738/Documents"
+    - "C:/Users/17738/AppData/Local/Temp"
+  matching_file_count: 0
+
+candidates:
+  - priority: 1
+    proposed_asset_id: "human_guitar_player_001"
+    asset_name: "Rory - Plays Strat - Marshall"
+    source:
+      url: "https://sketchfab.com/3d-models/rory-plays-strat-marshall-369sim-9b03b06a9da948659682aa88a1b9916f"
+      platform: "Sketchfab"
+      platform_asset_id: "9b03b06a9da948659682aa88a1b9916f"
+      creator: "TG13730"
+      license: "CC BY 4.0"
+      license_url: "https://creativecommons.org/licenses/by/4.0/"
+    platform_metadata:
+      evidence: "Previously verified through the official Sketchfab model page/API; not a search-summary claim."
+      format: "glb"
+      platform_reported_size_bytes: 17866560
+      rigged: true
+      animation_count: 2
+      downloadable: true
+    download_availability:
+      platform_lists_downloadable: true
+      official_file_obtained: false
+      official_download_request_status: "blocked_before_request"
+      authenticated_access_configured: false
+    local_verification:
+      source_file_present: false
+      format_verified: false
+      rig_verified: false
+      animation_verified: false
+      measured_size_bytes: null
+      checksum_sha256: null
+      status: "not_started_source_missing"
+
+  - priority: 2
+    proposed_asset_id: "human_phone_pacing_001"
+    asset_name: "Business Woman - Pacing And Talking On A Phone"
+    source:
+      url: "https://sketchfab.com/3d-models/business-woman-pacing-and-talking-on-a-phone-309dfbc06d4f4667bc1444208cb5e451"
+      platform: "Sketchfab"
+      platform_asset_id: "309dfbc06d4f4667bc1444208cb5e451"
+      creator: "Walter Araujo"
+      license: "CC BY 4.0"
+      license_url: "https://creativecommons.org/licenses/by/4.0/"
+    platform_metadata:
+      evidence: "Previously returned by the official Sketchfab API with downloadable=true; original archive was not inspected."
+      format: "unknown"
+      generated_gltf_export_expected: true
+      rigged: "unknown"
+      animation_count: null
+      animation_status: "unknown_until_source_inspection"
+      downloadable: true
+    download_availability:
+      platform_lists_downloadable: true
+      official_file_obtained: false
+      official_download_request_status: "not_reached_due_common_network_gate"
+      authenticated_access_configured: false
+    local_verification:
+      source_file_present: false
+      format_verified: false
+      rig_verified: false
+      animation_verified: false
+      measured_size_bytes: null
+      checksum_sha256: null
+      status: "not_started_source_missing"
+
+  - priority: 3
+    proposed_asset_id: "human_phone_talking_001"
+    asset_name: "Man talking on phone"
+    source:
+      url: "https://sketchfab.com/3d-models/man-talking-on-phone-5170123e83ec4eaca01492e3856512cd"
+      platform: "Sketchfab"
+      platform_asset_id: "5170123e83ec4eaca01492e3856512cd"
+      creator: "Characteranimations"
+      license: "CC BY 4.0"
+      license_url: "https://creativecommons.org/licenses/by/4.0/"
+    platform_metadata:
+      evidence: "Previously verified through the official Sketchfab model page/API; not a search-summary claim."
+      format: "fbx"
+      rigged: true
+      animation_count: 1
+      downloadable: true
+    download_availability:
+      platform_lists_downloadable: true
+      official_file_obtained: false
+      official_download_request_status: "not_reached_due_common_network_gate"
+      authenticated_access_configured: false
+    local_verification:
+      source_file_present: false
+      format_verified: false
+      rig_verified: false
+      animation_verified: false
+      measured_size_bytes: null
+      checksum_sha256: null
+      status: "not_started_source_missing"
+
+next_action:
+  preferred: "Retry official Sketchfab access when the network approval service is available and use authenticated download if required."
+  manual_fallback: "Download one original file from its official Sketchfab page and place it in the workspace; do not use an unknown mirror."
+  sha256_gate: "Create the candidate asset source/ and metadata/ directories and calculate SHA-256 only after the original file is present."

@@ -1,0 +1,41 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "pianist",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/generation/flux2_seed_42005_v1/candidate.png",
+    "sha256": "95d4bfe2bde8e5cdc5f4332721ea311ab4c0bcd04c153de8594904856fdea372",
+    "size_bytes": 1430796
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/generation/flux2_seed_42005_v1/generation_manifest.json",
+    "sha256": "1462cea9222c375ed6dc28d51ac0fab0b870e834313af8b1476d498019c29847"
+  },
+  "reviewed_at": "2026-09-21T02:51:08.4520520Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "person_and_piano_uncropped": "passed",
+    "upright_piano_complete": "passed",
+    "bench_present": "passed",
+    "playing_action_unambiguous": "passed",
+    "both_hands_on_keyboard": "passed",
+    "pedals_visible": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "piano_soundboard",
+    "visual_cue_anchor": "keyboard_playing_region",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "The combined person, bench and piano form a large complex silhouette with severe self-occlusion.",
+    "Hands contact the keys and may fuse with the keyboard during reconstruction.",
+    "The piano back and the person's hidden side have no single-view evidence."
+  ],
+  "dataset_notes": [
+    "Approved as the male baseline; identity diversity is deferred to expansion variants.",
+    "This is the highest-risk Pixal3D candidate in the first batch."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

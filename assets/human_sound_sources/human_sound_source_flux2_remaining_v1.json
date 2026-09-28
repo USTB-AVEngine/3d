@@ -1,0 +1,29 @@
+{
+  "schema": "human_sound_source_flux2_jobs_v1",
+  "jobs": [
+    {
+      "asset_id": "phone_call",
+      "seed": 42002,
+      "prompt": "A single adult man actively talking on a modern smartphone, full body visible from head to feet, three-quarter front view, smartphone pressed flat against one ear, mouth visibly open mid-sentence, one hand holding the phone naturally, the other hand making a restrained conversational gesture, upright balanced standing pose, clear separation between arms and torso, anatomically plausible hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, centered subject occupying about seventy-five percent of the frame, photorealistic, high detail",
+      "negative_prompt": "multiple people, sitting, texting, looking at phone screen, phone away from ear, closed mouth, headphones, handset, cropped head, cropped feet, extra limbs, extra fingers, fused hand, fused phone, deformed anatomy, occluded face, text, logo, watermark, room interior, dramatic background, motion blur"
+    },
+    {
+      "asset_id": "guitar_player",
+      "seed": 42003,
+      "prompt": "A single adult musician actively playing a full-size acoustic guitar, full body visible from head to feet, three-quarter front view, guitar body resting naturally against the torso, one hand visibly strumming directly over the sound hole, the other hand pressing the fretboard, clear guitar neck, strings, bridge and sound hole, focused live playing posture, anatomically plausible hands, arms clearly separated from the torso where possible, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, centered complete subject and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, electric guitar, amplifier, guitar case, guitar stand, merely holding guitar, both hands away from strings, incorrect hand placement, missing guitar neck, broken strings, cropped guitar, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur"
+    },
+    {
+      "asset_id": "violin_player",
+      "seed": 42004,
+      "prompt": "A single adult violinist actively playing a violin, full body visible from head to feet, three-quarter front view, violin correctly supported beneath the chin on the left shoulder, left hand pressing the fingerboard, right hand holding a complete straight bow in visible contact with the strings near the bridge, unmistakable performance posture, violin body and bow clearly separated from clothing and background, anatomically plausible hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background with strong edge contrast around the bow, centered complete subject and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, viola, cello, guitar, violin case, merely holding violin, bow missing, broken bow, bow away from strings, incorrect instrument pose, cropped bow, cropped violin, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur"
+    },
+    {
+      "asset_id": "pianist",
+      "seed": 42005,
+      "prompt": "A single adult pianist actively playing a compact upright acoustic piano, complete seated person and entire piano visible in one frame, three-quarter side view, both hands visibly placed on the keyboard with fingers in a natural playing position, eyes directed toward the keys, feet and piano pedals visible, clear bench, keyboard, piano body and soundboard enclosure, unmistakable performance posture, anatomically plausible arms and hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, isolated subject without room furnishings, photorealistic, high detail",
+      "negative_prompt": "multiple people, grand piano, digital keyboard, synthesizer, standing person, hands away from keys, merely sitting beside piano, closed keyboard lid, missing hands, cropped person, cropped piano, cropped feet, extra limbs, extra fingers, fused hands, deformed anatomy, room interior, sheet music, text, logo, watermark, stage, dramatic background, motion blur"
+    }
+  ]
+}

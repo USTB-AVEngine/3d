@@ -1,0 +1,41 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "megaphone_speaker",
+  "seed": 43004,
+  "reviewed_at": "2026-09-28T05:00:16.7709032Z",
+  "decision": "accept_with_conditions",
+  "source": {
+    "glb_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/megaphone_speaker/pixal/pixal_seed_43004_v1/pixal_raw_1024.glb",
+    "glb_sha256": "539a8310a4672ff85533e9a35e1bcfb388f3a5ec6a5abad6579cd3c66a170501",
+    "structural_validation_sha256": "43c3cba7355909ad0b21fbcb2e9c4a66053baf87c9dfc32a027af89c510d04b7"
+  },
+  "turntable": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/megaphone_speaker/review/glb_turntable_corrected_seed_43004_v1/turntable_sheet.png",
+    "sha256": "830ab49e69db865b893f5a34ae80c48163f0ba231393daf1dca9967111f5b848",
+    "render_manifest_sha256": "2d6019d934e6a3958154207141d800262a6f84229f395344d297678111b56aa6"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "material_count": 1,
+    "texture_count": 2,
+    "vertex_count": 724684,
+    "triangle_count": 985516,
+    "texture_size": [4096, 4096]
+  },
+  "checks": {
+    "identity_and_wardrobe_readable": "passed",
+    "full_body_complete": "passed",
+    "megaphone_bell_and_body_present": "passed",
+    "mouthpiece_relation_readable": "passed",
+    "speaking_action_readable": "passed",
+    "four_view_texture_consistency": "passed",
+    "texture_noise_absent": "passed",
+    "hands_and_handle": "passed_with_condition"
+  },
+  "conditions": [
+    "The hands and handle contain local fusion and translucent edge artifacts.",
+    "Fine handle and trigger details are simplified.",
+    "Use as a static medium-distance semantic sound-source asset rather than a hand close-up."
+  ],
+  "next_gate": "runtime_standardization_then_habitat_level_0"
+}

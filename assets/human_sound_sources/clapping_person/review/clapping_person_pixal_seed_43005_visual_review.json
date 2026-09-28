@@ -1,0 +1,41 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "clapping_person",
+  "seed": 43005,
+  "reviewed_at": "2026-09-28T06:03:19.5116972Z",
+  "decision": "accept_with_conditions",
+  "source": {
+    "glb_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/pixal/pixal_seed_43005_v1/pixal_raw_1024.glb",
+    "glb_sha256": "0b49665a8bb7321a8384166a0035a3ee2eee0d0ace8993ee41bd54c38a56d067",
+    "structural_validation_sha256": "7710a2b9bdd299a81af86bb6e4ba210026f433aace6a4b3080cb6f4d6b48956b"
+  },
+  "turntable": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/review/glb_turntable_corrected_seed_43005_v1/turntable_sheet.png",
+    "sha256": "55ad2f4ca6a1cfaaa8df8d4bdd9c8bdb5e8611e8864458e49ea831a5dd5f0d0c",
+    "render_manifest_sha256": "5c8a624cd4aa1415e747ef6774b69d1eb9642ac7db437168105332d1a910a75f"
+  },
+  "geometry": {
+    "mesh_count": 1,
+    "material_count": 1,
+    "texture_count": 2,
+    "vertex_count": 710677,
+    "triangle_count": 965587,
+    "texture_size": [4096, 4096]
+  },
+  "checks": {
+    "identity_and_wardrobe_readable": "passed",
+    "full_body_complete": "passed",
+    "clapping_pose_readable": "passed",
+    "palms_remain_separate": "passed",
+    "four_view_texture_consistency": "passed",
+    "texture_noise_absent": "passed",
+    "individual_fingers": "passed_with_condition",
+    "trouser_edges": "passed_with_condition"
+  },
+  "conditions": [
+    "Individual fingers are simplified but the two-hand clapping gesture remains readable.",
+    "Trouser and shoe edges show minor reconstruction roughness.",
+    "Use as a static medium-distance semantic sound-source asset."
+  ],
+  "next_gate": "runtime_standardization_then_habitat_level_0"
+}

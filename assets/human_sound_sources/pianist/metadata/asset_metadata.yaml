@@ -1,0 +1,83 @@
+schema_version: "1.0"
+asset_id: "hssa_pianist_v001"
+batch_id: "human_sound_source_assets_v1"
+category: "human_sound_source"
+generation_status: "raw_glb_visual_review_complete"
+
+semantic:
+  sound_event: "instrument.piano"
+  human_action: "playing_piano"
+  action_state: "performing"
+  semantic_verified: true
+  attached_object: "upright_acoustic_piano_and_bench"
+
+provenance:
+  route: "Flux2 -> ISNet -> Pixal3D"
+  generation_plan: "../generation_plan.yaml"
+  prompt_version: "v1"
+  seed: 42005
+  input_image_path: "../source/pianist_flux2_seed_42005_candidate.png"
+  rgba_image_path: "../segmentation/isnet_seed_42005_v1/input_rgba_isnet.png"
+  raw_glb_path: "../pixal/pixal_seed_42005_v1/pixal_raw_1024.glb"
+  raw_glb_sha256: "9476fc523bdaa42ba8ad41478eb5dcb466027cc455f06726e5cf5eb245144a5a"
+
+source_location:
+  default_anchor_id: "piano_body"
+  anchors:
+    - anchor_id: "piano_body"
+      role: "acoustic_anchor"
+      type: "local_surface_point"
+      target_region: "piano body center or built-in speaker panel"
+      local_position_m: [null, null, null]
+      local_forward: [null, null, null]
+    - anchor_id: "keyboard_hands"
+      role: "visual_cue_anchor"
+      type: "local_surface_point"
+      target_region: "center of actively played keyboard region"
+      local_position_m: [null, null, null]
+    - anchor_id: "asset_root"
+      role: "fallback_anchor"
+      type: "asset_origin"
+      local_position_m: [0.0, 0.0, 0.0]
+
+animation:
+  present: false
+  rigged: false
+  runtime_mode: "static_pose"
+
+format:
+  pixal3d_input: "rgba_image"
+  raw_output: "glb"
+  raw_output_name: "pixal_raw_1024.glb"
+
+runtime:
+  standardized_glb_path: "../runtime/standardized_seed_42005_v1/model.glb"
+  standardized_glb_sha256: "e2608af34ff614046ebd1d36f2a913b27cdb30f96cf2aea455db7c8f18fb7467"
+  standardization_manifest_path: "../runtime/standardized_seed_42005_v1/model.manifest.json"
+  units: "meters"
+  up_axis: "+Y"
+  forward_axis: "-Z"
+  target_height_m: 1.55
+  bounds_m:
+    min: [-0.768349180414063, 0.0, -0.71520177622385]
+    max: [0.768349180414063, 1.55, 0.71520177622385]
+  geometry_preserved: true
+  material_metallic_factor: 0.0
+  material_roughness_factor: 0.8
+
+visual_review:
+  decision: "conditional_accept"
+  report_path: "../review/pianist_pixal_seed_42005_visual_review.json"
+  conditions:
+    - "Treat the person, piano and bench as one static combined prop."
+    - "Verify the large footprint and incomplete rear in the target scene."
+
+license:
+  generated_asset_policy: "review_required"
+  model_terms_recorded: false
+
+poly_count: 924514
+vertex_count: 639799
+conversion_status: "standardized_pending_habitat_level_0"
+habitat_status: "not_tested"
+avengine_status: "not_registered"

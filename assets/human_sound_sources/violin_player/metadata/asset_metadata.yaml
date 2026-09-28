@@ -1,0 +1,82 @@
+schema_version: "1.0"
+asset_id: "hssa_violin_player_v001"
+batch_id: "human_sound_source_assets_v1"
+category: "human_sound_source"
+generation_status: "raw_glb_visual_review_complete"
+
+semantic:
+  sound_event: "instrument.violin"
+  human_action: "playing_violin"
+  action_state: "performing"
+  semantic_verified: true
+  attached_object: "violin_and_bow"
+
+provenance:
+  route: "Flux2 -> ISNet -> Pixal3D"
+  generation_plan: "../generation_plan.yaml"
+  prompt_version: "v1"
+  seed: 42004
+  input_image_path: "../source/violin_player_flux2_seed_42004_candidate.png"
+  rgba_image_path: "../segmentation/isnet_seed_42004_v1/input_rgba_isnet.png"
+  raw_glb_path: "../pixal/pixal_seed_42004_v1/pixal_raw_1024.glb"
+  raw_glb_sha256: "8630ece04204d934598437f43d8b4f439a7739e206b540c50dede7ecf2bc122a"
+
+source_location:
+  default_anchor_id: "violin_body"
+  anchors:
+    - anchor_id: "violin_body"
+      role: "acoustic_anchor"
+      type: "local_surface_point"
+      target_region: "violin body near bridge and f-holes"
+      local_position_m: [null, null, null]
+      local_forward: [null, null, null]
+    - anchor_id: "bow_string_contact"
+      role: "visual_cue_anchor"
+      type: "local_surface_point"
+      target_region: "bow-string contact region"
+      local_position_m: [null, null, null]
+    - anchor_id: "asset_root"
+      role: "fallback_anchor"
+      type: "asset_origin"
+      local_position_m: [0.0, 0.0, 0.0]
+
+animation:
+  present: false
+  rigged: false
+  runtime_mode: "static_pose"
+
+format:
+  pixal3d_input: "rgba_image"
+  raw_output: "glb"
+  raw_output_name: "pixal_raw_1024.glb"
+
+runtime:
+  standardized_glb_path: "../runtime/standardized_seed_42004_v1/model.glb"
+  standardized_glb_sha256: "b646487d0645f7af270d1900caaf8ea8e04ffc242acc40bd2cbb5bd72d8ddf0a"
+  standardization_manifest_path: "../runtime/standardized_seed_42004_v1/model.manifest.json"
+  units: "meters"
+  up_axis: "+Y"
+  forward_axis: "-Z"
+  target_height_m: 1.75
+  bounds_m:
+    min: [-0.462150919148018, 0.0, -0.427918574003907]
+    max: [0.462150919148018, 1.75, 0.427918574003907]
+  geometry_preserved: true
+  material_metallic_factor: 0.0
+  material_roughness_factor: 0.8
+
+visual_review:
+  decision: "accept_with_conditions"
+  report_path: "../review/violin_player_pixal_seed_42004_visual_review.json"
+  conditions:
+    - "Preserve and recheck the thin bow during decimation."
+
+license:
+  generated_asset_policy: "review_required"
+  model_terms_recorded: false
+
+poly_count: 952204
+vertex_count: 696916
+conversion_status: "standardized_pending_habitat_level_0"
+habitat_status: "not_tested"
+avengine_status: "not_registered"

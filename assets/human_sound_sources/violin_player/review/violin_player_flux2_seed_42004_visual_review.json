@@ -1,0 +1,40 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "violin_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/generation/flux2_seed_42004_v1/candidate.png",
+    "sha256": "a194cc9a1e0c19996a60b23aaf3db8f3923330b42a5bc454d148893ac5a47669",
+    "size_bytes": 1047014
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/generation/flux2_seed_42004_v1/generation_manifest.json",
+    "sha256": "a44e318eb07e6195cf8171e6d04f95ccf8b628c08833fdf4ed446039f4465c29"
+  },
+  "reviewed_at": "2026-09-21T02:51:08.4520520Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "violin_complete": "passed",
+    "bow_complete": "passed",
+    "playing_action_unambiguous": "passed",
+    "violin_under_chin": "passed",
+    "bow_in_contact_with_strings": "passed",
+    "fretting_hand_on_fingerboard": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "violin_body",
+    "visual_cue_anchor": "bow_string_contact_region",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "The bow is a long thin structure and may be lost or broken during segmentation or reconstruction.",
+    "The violin contacts the jaw, shoulder and hand and may partially fuse with the body."
+  ],
+  "dataset_notes": [
+    "Approved as the male baseline; identity diversity is deferred to expansion variants."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

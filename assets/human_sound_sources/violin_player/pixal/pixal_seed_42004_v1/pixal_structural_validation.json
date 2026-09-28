@@ -1,0 +1,18 @@
+{
+  "asset_id": "violin_player",
+  "glb": {
+    "mode": "0660",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/pixal/pixal_seed_42004_v1/pixal_raw_1024.glb",
+    "relative_path": "pixal_raw_1024.glb",
+    "sha256": "8630ece04204d934598437f43d8b4f439a7739e206b540c50dede7ecf2bc122a",
+    "size_bytes": 37174112
+  },
+  "image_count": 2,
+  "material_count": 1,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "schema": "human_sound_source_pixal_structural_validation_v1",
+  "seed": 42004,
+  "status": "passed",
+  "texture_count": 2
+}

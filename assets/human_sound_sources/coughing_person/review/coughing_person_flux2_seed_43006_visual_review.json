@@ -1,0 +1,37 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "coughing_person",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/generation/flux2_seed_43006_v1/candidate.png",
+    "sha256": "db00ce4eeec3c9989ca9878c9671ac8a8a45ed181866be1639348aaadbae7fdd",
+    "size_bytes": 1428403
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/generation/flux2_seed_43006_v1/generation_manifest.json",
+    "sha256": "0d30110c2eba134c7b992ba15c5468527fa9edd3663471fc7dee57ab06339b6d"
+  },
+  "reviewed_at": "2026-09-28T06:07:45.8643056Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "open_mouth_and_coughing_expression": "passed",
+    "hand_near_mouth_without_covering_face": "passed",
+    "coughing_action_readable": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "conditions": [
+    "The second hand grips the cross-body strap rather than resting directly on the chest.",
+    "The bag hangs at the side-front rather than close against the back."
+  ],
+  "anchors": {
+    "acoustic_anchor": "open_mouth",
+    "visual_cue_anchor": "closed_hand_near_mouth",
+    "fallback_anchor": "human_root"
+  },
+  "next_gate": "isnet_rgba_review"
+}

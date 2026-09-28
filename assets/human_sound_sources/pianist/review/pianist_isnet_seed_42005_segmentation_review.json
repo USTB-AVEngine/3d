@@ -1,0 +1,32 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "pianist",
+  "instance_id": "pianist_flux2_seed_42005_v1",
+  "reviewed_at": "2026-09-21T03:05:00Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "cb418010de9e7c43bead9c3bfa5b1ca2bb71a3beedabf49766bac7f7715dc3d4",
+    "foreground_fraction_at_128": 0.4581718444824219,
+    "foreground_bbox_xyxy": [85, 75, 995, 978]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/input_rgba_isnet.png",
+    "sha256": "5a92fa3ac6a2a414b6a2d124f443a6ac02c2dc68ccb39db415ef9748d63f7f2c",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "upright_piano_preserved": "passed",
+    "keyboard_and_hands_preserved": "passed",
+    "bench_and_legs_preserved": "passed",
+    "pedals_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "This is a large connected multi-object silhouette with severe self-occlusion.",
+    "Hands may fuse with the keyboard and hidden back geometry is unconstrained."
+  ],
+  "pixal_parameters": {"resolution": 1024, "manual_fov": 0.2, "low_vram": false, "seed": 42005},
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

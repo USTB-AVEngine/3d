@@ -1,0 +1,65 @@
+{
+  "animation_count": 0,
+  "asset_generator": "https://github.com/mikedh/trimesh",
+  "camera_count": 0,
+  "declared_length": 37605200,
+  "default_scene": 0,
+  "extensions_required": [
+    "EXT_texture_webp"
+  ],
+  "extensions_used": [
+    "EXT_texture_webp"
+  ],
+  "glb_version": 2,
+  "image_count": 2,
+  "local_position_bounds": {
+    "available": true,
+    "extent": [
+      0.333586648106575,
+      0.9058887362480164,
+      0.3470885753631592
+    ],
+    "maximum": [
+      0.16652020812034607,
+      0.4535769820213318,
+      0.17980407178401947
+    ],
+    "minimum": [
+      -0.16706643998622894,
+      -0.45231175422668457,
+      -0.1672845035791397
+    ],
+    "note": "Accessor-local bounds; node transforms are reported separately."
+  },
+  "material_count": 1,
+  "mesh_count": 1,
+  "node_count": 3,
+  "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\phone_call\\runtime\\standardized_seed_42002_v1\\model.glb",
+  "primitive_count": 1,
+  "primitives": [
+    {
+      "attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ],
+      "extensions": [],
+      "material_index": 0,
+      "mesh_index": 0,
+      "mode": 4,
+      "primitive_index": 0,
+      "triangle_count": 985711,
+      "vertex_count": 718777
+    }
+  ],
+  "scene_count": 1,
+  "schema": "avengine_glb_structure_inspection_v1",
+  "sha256": "6df91ad89a868f709f2ea7f03cc5af3bd1253836f552fadbee934d869b568d6f",
+  "size_bytes": 37605200,
+  "skin_count": 0,
+  "status": "passed",
+  "texture_count": 2,
+  "transformed_node_count": 1,
+  "triangle_count_sum": 985711,
+  "vertex_count_sum": 718777
+}

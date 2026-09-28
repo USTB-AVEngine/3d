@@ -1,0 +1,38 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "saxophone_player",
+  "instance_id": "saxophone_player_flux2_seed_43001_v1",
+  "reviewed_at": "2026-09-27T14:44:08.4807112Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "053708167d3ff7eefaddc8a00dabb3d89bd381a95eb184fc6b319949be52103f",
+    "foreground_fraction_at_128": 0.19658565521240234,
+    "foreground_bbox_xyxy": [347, 44, 727, 1005]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/segmentation/isnet_seed_43001_v1/input_rgba_isnet.png",
+    "sha256": "6f290ed1590daf83305b44a0885019ee51edbe7aab18d3ce2e22b77afb5e296e",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "head_and_feet_complete": "passed",
+    "saxophone_body_preserved": "passed",
+    "saxophone_bell_preserved": "passed",
+    "mouthpiece_connection_preserved": "passed",
+    "both_playing_hands_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "A small transparent slit remains inside the saxophone keywork region but does not break the outer silhouette.",
+    "Individual rods and keys are below reliable single-view reconstruction scale."
+  ],
+  "pixal_parameters": {
+    "resolution": 1024,
+    "manual_fov": 0.2,
+    "low_vram": false,
+    "seed": 43001
+  },
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

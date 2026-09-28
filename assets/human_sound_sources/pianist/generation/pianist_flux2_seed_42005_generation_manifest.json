@@ -1,0 +1,38 @@
+{
+  "asset_id": "pianist",
+  "created_at": "2026-09-21T02:18:45.035763+00:00",
+  "effective_prompt": "A single adult pianist actively playing a compact upright acoustic piano, complete seated person and entire piano visible in one frame, three-quarter side view, both hands visibly placed on the keyboard with fingers in a natural playing position, eyes directed toward the keys, feet and piano pedals visible, clear bench, keyboard, piano body and soundboard enclosure, unmistakable performance posture, anatomically plausible arms and hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, isolated subject without room furnishings, photorealistic, high detail Avoid: multiple people, grand piano, digital keyboard, synthesizer, standing person, hands away from keys, merely sitting beside piano, closed keyboard lid, missing hands, cropped person, cropped piano, cropped feet, extra limbs, extra fingers, fused hands, deformed anatomy, room interior, sheet music, text, logo, watermark, stage, dramatic background, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, grand piano, digital keyboard, synthesizer, standing person, hands away from keys, merely sitting beside piano, closed keyboard lid, missing hands, cropped person, cropped piano, cropped feet, extra limbs, extra fingers, fused hands, deformed anatomy, room interior, sheet music, text, logo, watermark, stage, dramatic background, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/generation/flux2_seed_42005_v1/candidate.png",
+    "sha256": "95d4bfe2bde8e5cdc5f4332721ea311ab4c0bcd04c153de8594904856fdea372",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1430796
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/generation/flux2_seed_42005_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single adult pianist actively playing a compact upright acoustic piano, complete seated person and entire piano visible in one frame, three-quarter side view, both hands visibly placed on the keyboard with fingers in a natural playing position, eyes directed toward the keys, feet and piano pedals visible, clear bench, keyboard, piano body and soundboard enclosure, unmistakable performance posture, anatomically plausible arms and hands, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, isolated subject without room furnishings, photorealistic, high detail",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "15082924579352ea5f706bb783405a428c04596564acfee1e737594bc08325c9"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 42005,
+  "status": "pending_visual_review"
+}

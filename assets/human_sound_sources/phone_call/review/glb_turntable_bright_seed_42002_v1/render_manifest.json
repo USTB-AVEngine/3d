@@ -1,0 +1,32 @@
+{
+  "backend": "egl",
+  "bounds": [
+    [
+      -0.16706643998622894,
+      -0.45231175422668457,
+      -0.1672845035791397
+    ],
+    [
+      0.16652020812034607,
+      0.4535769820213318,
+      0.17980407178401947
+    ]
+  ],
+  "glb": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/pixal/pixal_seed_42002_v1/pixal_raw_1024.glb",
+  "schema": "avengine_glb_turntable_render_v1",
+  "sheet": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/review/glb_turntable_bright_seed_42002_v1/turntable_sheet.png",
+  "size": 640,
+  "status": "passed",
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "triangle_count": 985711,
+  "vertex_count": 718777,
+  "views": [
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/review/glb_turntable_bright_seed_42002_v1/front.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/review/glb_turntable_bright_seed_42002_v1/right.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/review/glb_turntable_bright_seed_42002_v1/back.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/review/glb_turntable_bright_seed_42002_v1/left.png"
+  ]
+}

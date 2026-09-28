@@ -1,0 +1,38 @@
+{
+  "asset_id": "hand_drum_player",
+  "created_at": "2026-09-28T02:40:01.765070+00:00",
+  "effective_prompt": "A single warm South Asian male percussionist in his mid-thirties with wavy dark hair and a short beard, actively playing one full djembe hand drum while seated on one simple round stool, complete person, stool and drum visible in one frame, eye-level three-quarter front view, djembe upright between his knees, one open palm visibly contacting the center of the drumhead and the other open hand raised just above the rim ready for the next strike, complete drumhead, rope tuning, rim and tapered carved wooden body visible. He wears an open indigo block-print overshirt over a fitted cream cotton T-shirt, tapered olive trousers, brown leather ankle boots, one wooden bead bracelet, and a woven drum strap resting securely against the drum. Rich but controlled fabric and wood detail, unmistakable rhythmic performance pose, soft neutral three-point studio lighting, plain warm light-gray background, centered complete subject with clear margins, photorealistic, high detail, natural anatomy. Avoid: multiple people, generic middle-aged man, black T-shirt, drum kit, snare drum, drumsticks, two drums, merely holding drum, both hands away from drumhead, both hands touching same place, missing drumhead, cropped drum, cropped hands, cropped head, cropped feet, extra limbs, extra fingers, fused hands, broken drum, ornate tassels, loose necklace, long scarf, extra furniture, stage, audience, text, logo, watermark, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, generic middle-aged man, black T-shirt, drum kit, snare drum, drumsticks, two drums, merely holding drum, both hands away from drumhead, both hands touching same place, missing drumhead, cropped drum, cropped hands, cropped head, cropped feet, extra limbs, extra fingers, fused hands, broken drum, ornate tassels, loose necklace, long scarf, extra furniture, stage, audience, text, logo, watermark, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/generation/flux2_seed_43003_v1/candidate.png",
+    "sha256": "26198b4aa15e8bb1b9fa93b5fe9c547b4274170cc5ae3335f6c9d60fe9fc6cae",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1415379
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/generation/flux2_seed_43003_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single warm South Asian male percussionist in his mid-thirties with wavy dark hair and a short beard, actively playing one full djembe hand drum while seated on one simple round stool, complete person, stool and drum visible in one frame, eye-level three-quarter front view, djembe upright between his knees, one open palm visibly contacting the center of the drumhead and the other open hand raised just above the rim ready for the next strike, complete drumhead, rope tuning, rim and tapered carved wooden body visible. He wears an open indigo block-print overshirt over a fitted cream cotton T-shirt, tapered olive trousers, brown leather ankle boots, one wooden bead bracelet, and a woven drum strap resting securely against the drum. Rich but controlled fabric and wood detail, unmistakable rhythmic performance pose, soft neutral three-point studio lighting, plain warm light-gray background, centered complete subject with clear margins, photorealistic, high detail, natural anatomy.",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "9a85e3ee1c6d4a3070d91b7e5b59e3abdc93fba75947789b6b44031077e8961b"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 43003,
+  "status": "pending_visual_review"
+}

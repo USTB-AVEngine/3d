@@ -1,0 +1,38 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "flute_player",
+  "instance_id": "flute_player_flux2_seed_43012_v1",
+  "reviewed_at": "2026-09-27T17:35:06.4880341Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "85591b14a9634e5302690676effe57daa966b77621f3597d8adfc32bbaa354a7",
+    "foreground_fraction_at_128": 0.1688995361328125,
+    "foreground_bbox_xyxy": [328, 48, 791, 1005]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/segmentation/isnet_seed_43012_v1/input_rgba_isnet.png",
+    "sha256": "63e6b5dcec00fdf5c5b4a81de1c9ecc6a87f060e784efeb46fe3ae086340e50e",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "head_hair_and_feet_complete": "passed",
+    "flute_full_length_preserved": "passed",
+    "flute_endpoints_preserved": "passed",
+    "embouchure_connection_preserved": "passed",
+    "both_playing_hands_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "Individual flute keys and rods are below reliable single-view reconstruction scale.",
+    "Finger overlap may merge with the keywork and the straight tube must be checked in the turntable render."
+  ],
+  "pixal_parameters": {
+    "resolution": 1024,
+    "manual_fov": 0.2,
+    "low_vram": true,
+    "seed": 43012
+  },
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

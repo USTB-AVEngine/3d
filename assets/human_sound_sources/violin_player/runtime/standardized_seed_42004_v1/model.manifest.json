@@ -1,0 +1,68 @@
+{
+  "asset_id": "violin_player",
+  "forward_axis": "-Z",
+  "geometry_preserved": true,
+  "output": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\violin_player\\runtime\\standardized_seed_42004_v1\\model.glb",
+    "sha256": "b646487d0645f7af270d1900caaf8ea8e04ffc242acc40bd2cbb5bd72d8ddf0a",
+    "size_bytes": 37174536
+  },
+  "schema": "human_sound_source_glb_standardization_v1",
+  "source": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\violin_player\\pixal\\pixal_seed_42004_v1\\pixal_raw_1024.glb",
+    "sha256": "8630ece04204d934598437f43d8b4f439a7739e206b540c50dede7ecf2bc122a"
+  },
+  "standardization": {
+    "material_changes": [
+      {
+        "after": {
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.8
+        },
+        "before": {
+          "metallicFactor": 1.0,
+          "roughnessFactor": 1.0
+        },
+        "material_index": 0
+      }
+    ],
+    "normalized_bounds_m": {
+      "max": [
+        0.46215091914801815,
+        1.75,
+        0.42791857400390687
+      ],
+      "min": [
+        -0.46215091914801815,
+        0.0,
+        -0.4279185740039069
+      ]
+    },
+    "root_node_index": 2,
+    "scale": 1.957958950062428,
+    "source_bounds": {
+      "max": [
+        0.24119879305362701,
+        0.4539337754249573,
+        0.22563216090202332
+      ],
+      "min": [
+        -0.23087537288665771,
+        -0.43985411524772644,
+        -0.21147462725639343
+      ]
+    },
+    "translation": [
+      -0.010106416455586251,
+      0.8612163016710767,
+      -0.013859934856135491
+    ]
+  },
+  "status": "passed",
+  "target_height_m": 1.75,
+  "texture_payloads_preserved": true,
+  "trailing_chunk_sha256": [
+    "c2cd63c68d5bca7f582ffd00c5415bf261d13f46401f4129ad0de5cd564aa948"
+  ],
+  "up_axis": "+Y"
+}

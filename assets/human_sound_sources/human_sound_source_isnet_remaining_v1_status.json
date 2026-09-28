@@ -1,0 +1,94 @@
+{
+  "failed_count": 0,
+  "jobs": [
+    {
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/segmentation/isnet_seed_42002_v1/alpha_isnet.png",
+      "alpha_sha256": "5cdf6e03699ddbca96ced2448b57119bc665f4cf051984ef33544bf65b2f0db3",
+      "foreground_bbox_xyxy": [
+        338,
+        33,
+        695,
+        1010
+      ],
+      "foreground_fraction_at_128": 0.17417335510253906,
+      "instance_id": "phone_call_flux2_seed_42002_v1",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/segmentation/isnet_seed_42002_v1/input_rgba_isnet.png",
+      "rgba_sha256": "3d19528830050b6fd6bf524bf41fa6a0c44c059eae43874735dc269916b66844",
+      "status": "passed",
+      "wall_seconds": 1.6619284530170262
+    },
+    {
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/segmentation/isnet_seed_42003_v1/alpha_isnet.png",
+      "alpha_sha256": "f8887808d84a989c92550108d205c6df270ddf3f0bad40aa370a5f5766cae0e0",
+      "foreground_bbox_xyxy": [
+        258,
+        46,
+        814,
+        998
+      ],
+      "foreground_fraction_at_128": 0.21277427673339844,
+      "instance_id": "guitar_player_flux2_seed_42003_v1",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/segmentation/isnet_seed_42003_v1/input_rgba_isnet.png",
+      "rgba_sha256": "e951e92469d3f354e2aa5b84c3ca041cd9b286c731a155239c96b49aa4575a53",
+      "status": "passed",
+      "wall_seconds": 1.4038539570756257
+    },
+    {
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/segmentation/isnet_seed_42004_v1/alpha_isnet.png",
+      "alpha_sha256": "034fc973b39e4995fcc0578f91e40451ca76a78bc3d339e43bac2fb15e5678aa",
+      "foreground_bbox_xyxy": [
+        274,
+        47,
+        782,
+        1013
+      ],
+      "foreground_fraction_at_128": 0.1696615219116211,
+      "instance_id": "violin_player_flux2_seed_42004_v1",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/violin_player/segmentation/isnet_seed_42004_v1/input_rgba_isnet.png",
+      "rgba_sha256": "0e4c25f53f9716163db4e3c6190190ff373d59e43279aafe3865dad0a30b9872",
+      "status": "passed",
+      "wall_seconds": 1.2880122009664774
+    },
+    {
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/alpha_isnet.png",
+      "alpha_sha256": "cb418010de9e7c43bead9c3bfa5b1ca2bb71a3beedabf49766bac7f7715dc3d4",
+      "foreground_bbox_xyxy": [
+        85,
+        75,
+        995,
+        978
+      ],
+      "foreground_fraction_at_128": 0.4581718444824219,
+      "instance_id": "pianist_flux2_seed_42005_v1",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/input_rgba_isnet.png",
+      "rgba_sha256": "5a92fa3ac6a2a414b6a2d124f443a6ac02c2dc68ccb39db415ef9748d63f7f2c",
+      "status": "passed",
+      "wall_seconds": 1.4817624003626406
+    }
+  ],
+  "model": {
+    "name": "isnet-general-use",
+    "path": "/data/models/rembg/isnet-general-use/isnet-general-use.onnx",
+    "sha256": "60920e99c45464f2ba57bee2ad08c919a52bbf852739e96947fbb4358c0d964a"
+  },
+  "model_load_seconds": 0.9877833221107721,
+  "passed_count": 4,
+  "schema": "avengine_controlled_animal_isnet_status_v1",
+  "status": "passed"
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "flute_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43012_v1/candidate.png",
+    "sha256": "955c97f744ee430ddf4b667e704747cd0de22291166ebe70130bea47cce89f98",
+    "size_bytes": 1320853
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43012_v1/generation_manifest.json",
+    "sha256": "44df4202129e5cd560bb5155b3df4132b430522ac849dee207ea05ed07c23067"
+  },
+  "reviewed_at": "2026-09-28T00:00:00+08:00",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "transverse_concert_flute_complete": "passed",
+    "flute_horizontal_at_lips": "passed",
+    "playing_action_unambiguous": "passed",
+    "both_hands_on_separate_key_regions": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "flute_embouchure_plate",
+    "visual_cue_anchor": "lower_lip_at_embouchure_hole",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "Fine flute keys and rods may be simplified during single-view reconstruction.",
+    "Fingers overlap the keywork and require careful segmentation and later turntable review."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

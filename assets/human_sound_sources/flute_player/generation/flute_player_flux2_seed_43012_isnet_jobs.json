@@ -1,0 +1,12 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "flute_player_flux2_seed_43012_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43012_v1/candidate.png",
+      "candidate_sha256": "955c97f744ee430ddf4b667e704747cd0de22291166ebe70130bea47cce89f98",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/segmentation/isnet_seed_43012_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/segmentation/isnet_seed_43012_v1/input_rgba_isnet.png"
+    }
+  ]
+}

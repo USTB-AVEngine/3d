@@ -1,0 +1,56 @@
+schema_version: "1.0"
+asset_id: "hssa_guitar_player_v001"
+category: "guitar_player"
+status: "planned_not_generated"
+
+image_generation:
+  model_family: "Flux2"
+  prompt_format: "plain_english_positive_prompt"
+  prompt_version: "v1"
+  prompt: >-
+    Full-body realistic studio image of one adult musician actively playing an acoustic guitar, guitar body resting
+    naturally against the torso, left hand pressing the fretboard with visible finger placement, right hand actively
+    strumming directly across the strings above the sound hole, focused performance expression, stable standing pose
+    with a guitar strap, natural human proportions, both hands and both feet visible, three-quarter front view showing
+    the complete guitar body, sound hole, neck and headstock, entire person and guitar inside the frame, clean
+    light-gray studio background, soft even lighting, sharp focus, clear connected foreground silhouette, no amplifier,
+    no cable, no stand, no extra instrument, no extra person, no text, no logo, no cropped body parts, no motion blur.
+  separate_negative_prompt_supported: "TBD_SERVER_CODE"
+  candidate_count: 12
+
+expected_visual_attributes:
+  human_count: 1
+  pose: "active strumming and fretting, not simply carrying the guitar"
+  attached_object: "one complete acoustic guitar with strap"
+  interaction: "left hand on fretboard and right hand at strings/sound hole"
+  camera: "three-quarter front, full body, guitar face visible"
+  segmentation_unit: "human, strap, and guitar in one foreground mask"
+
+rejection_criteria:
+  - "either hand is away from its required playing region"
+  - "guitar neck, headstock, body, sound hole, or strap is missing"
+  - "hands merge into guitar or have unusable extra fingers"
+  - "pose reads as holding, carrying, or posing with the guitar"
+  - "amplifier, cable, stand, extra person, text, or logos"
+
+pixal3d_risk:
+  level: "medium_low"
+  critical_regions: ["fretboard hand", "strumming hand", "guitar neck", "strap"]
+  notes: "The large prop gives strong geometry cues; strings themselves are not required to reconstruct individually."
+
+sound_anchors:
+  acoustic_anchor:
+    id: "guitar_sound_hole"
+    planned_type: "local_surface_point"
+    target_region: "center of acoustic guitar sound hole/body"
+    directivity: "outward_from_guitar_front"
+  visual_cue_anchor:
+    id: "guitar_playing_region"
+    planned_type: "local_surface_point"
+    target_region: "strumming area between bridge and sound hole"
+  fallback_anchor:
+    id: "asset_root"
+    planned_type: "asset_origin"
+
+metadata_path: "metadata/asset_metadata.yaml"
+

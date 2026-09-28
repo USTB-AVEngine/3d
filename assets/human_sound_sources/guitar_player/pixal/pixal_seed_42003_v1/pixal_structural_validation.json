@@ -1,0 +1,18 @@
+{
+  "asset_id": "guitar_player",
+  "glb": {
+    "mode": "0660",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/pixal/pixal_seed_42003_v1/pixal_raw_1024.glb",
+    "relative_path": "pixal_raw_1024.glb",
+    "sha256": "fbbfe1a32cd0684e07f53c0830c004a8519919b04d6191fea48b090524ee6e80",
+    "size_bytes": 38703756
+  },
+  "image_count": 2,
+  "material_count": 1,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "schema": "human_sound_source_pixal_structural_validation_v1",
+  "seed": 42003,
+  "status": "passed",
+  "texture_count": 2
+}

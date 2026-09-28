@@ -1,0 +1,12 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "coughing_person_flux2_seed_43006_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/generation/flux2_seed_43006_v1/candidate.png",
+      "candidate_sha256": "db00ce4eeec3c9989ca9878c9671ac8a8a45ed181866be1639348aaadbae7fdd",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/segmentation/isnet_seed_43006_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/segmentation/isnet_seed_43006_v1/input_rgba_isnet.png"
+    }
+  ]
+}

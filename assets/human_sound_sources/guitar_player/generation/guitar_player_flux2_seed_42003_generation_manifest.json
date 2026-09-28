@@ -1,0 +1,38 @@
+{
+  "asset_id": "guitar_player",
+  "created_at": "2026-09-21T02:18:17.978598+00:00",
+  "effective_prompt": "A single adult musician actively playing a full-size acoustic guitar, full body visible from head to feet, three-quarter front view, guitar body resting naturally against the torso, one hand visibly strumming directly over the sound hole, the other hand pressing the fretboard, clear guitar neck, strings, bridge and sound hole, focused live playing posture, anatomically plausible hands, arms clearly separated from the torso where possible, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, centered complete subject and instrument, photorealistic, high detail Avoid: multiple people, electric guitar, amplifier, guitar case, guitar stand, merely holding guitar, both hands away from strings, incorrect hand placement, missing guitar neck, broken strings, cropped guitar, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, electric guitar, amplifier, guitar case, guitar stand, merely holding guitar, both hands away from strings, incorrect hand placement, missing guitar neck, broken strings, cropped guitar, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, fused instrument, deformed anatomy, text, logo, watermark, stage, dramatic background, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/generation/flux2_seed_42003_v1/candidate.png",
+    "sha256": "a39c2a4819d51a6e2b6bf21e57e5f7dd4dfd36244b894fa239ab97d0871b9bf1",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1279229
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/generation/flux2_seed_42003_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single adult musician actively playing a full-size acoustic guitar, full body visible from head to feet, three-quarter front view, guitar body resting naturally against the torso, one hand visibly strumming directly over the sound hole, the other hand pressing the fretboard, clear guitar neck, strings, bridge and sound hole, focused live playing posture, anatomically plausible hands, arms clearly separated from the torso where possible, simple fitted contemporary clothing and shoes, neutral studio lighting, plain light gray background, centered complete subject and instrument, photorealistic, high detail",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "15082924579352ea5f706bb783405a428c04596564acfee1e737594bc08325c9"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 42003,
+  "status": "pending_visual_review"
+}

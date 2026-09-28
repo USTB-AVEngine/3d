@@ -1,0 +1,131 @@
+schema_version: "1.0"
+
+asset_id: "human_<action>_<variant>_v001"
+display_name: ""
+category: "human_sound_source"
+sound_event: ""                    # e.g. human.speech.phone_call
+human_action: ""                   # e.g. talking_on_phone
+poly_count: null                    # measured triangle count after import
+
+attached_object:
+  - object_id: ""
+    object_type: ""                # phone | microphone | guitar | violin | piano
+    node_name: ""
+    attached_to_bone: ""
+    required_for_event: true
+    binding_verified: false
+
+provenance:
+  platform: ""
+  platform_asset_id: ""
+  source_url: ""
+  author: ""
+  retrieved_at: null
+  raw_file_name: ""
+  raw_sha256: ""
+
+license:
+  name: ""
+  url: ""
+  attribution_required: null
+  attribution_text: ""
+  commercial_use: "unknown"       # allowed | prohibited | unknown
+  modification: "unknown"         # allowed | prohibited | unknown
+  raw_redistribution: "unknown"    # allowed | prohibited | review_required | unknown
+  rendered_dataset_use: "unknown" # allowed | prohibited | review_required | unknown
+  review_notes: ""
+
+semantics:
+  action_state: "performing"       # performing | holding | idle
+  semantic_clarity: null            # 1..5
+  semantic_verified: false
+  verification_notes: ""
+
+source_location:
+  default_anchor_id: ""
+  fallback_anchor_id: "asset_root"
+  anchors:
+    - anchor_id: "asset_root"
+      role: "fallback_anchor"       # acoustic_anchor | visual_cue_anchor | fallback_anchor
+      node_name: ""
+      bone_name: ""
+      local_position_m: [0.0, 0.0, 0.0]
+      local_forward: [0.0, 0.0, -1.0]
+      directivity: "omnidirectional"
+      event_roles: []
+      approximation: false
+      notes: ""
+
+animation:
+  present: false
+  rigged: false
+  armature_name: ""
+  bone_count: null
+  runtime_mode: "static_pose"      # static_pose | skeletal_animation | frame_baked
+  representative_clip: ""
+  representative_time_s: null
+  clips:
+    - name: ""
+      duration_s: null
+      fps: null
+      loop: false
+      root_motion: "unknown"        # none | translation | rotation | both | unknown
+      accepted: false
+      notes: ""
+
+format:
+  original: ""
+  runtime: "glb"
+  blender_version: ""
+  exporter_version: ""
+  units: "meters"
+  up_axis: "+Y"
+  forward_axis: "-Z"
+
+geometry:
+  object_count: null
+  mesh_count: null
+  vertex_count: null
+  material_count: null
+  texture_count: null
+  hidden_object_count: null
+  armature_count: null
+  poly_count_source: "measured"     # measured | platform_reported | unknown
+  requires_simplification: null
+  removed_objects: []
+  bounds_m:
+    min: [null, null, null]
+    max: [null, null, null]
+  ground_contact_offset_m: null
+
+materials:
+  pbr_compatible: null
+  missing_textures: []
+  unsupported_shaders: []
+  alpha_modes: []
+  notes: ""
+
+validation:
+  geometry: "not_tested"           # not_tested | passed | rework | failed
+  skeleton: "not_tested"
+  animation: "not_tested"
+  materials: "not_tested"
+  semantics: "not_tested"
+  glb_roundtrip: "not_tested"
+  source_binding: "not_tested"
+  issues: []
+  report_path: "validation/report.json"
+  preview_paths: []
+
+conversion_status: "not_started"
+habitat_status: "not_tested"
+avengine_status: "not_registered"
+
+artifacts:
+  source_path: ""
+  blend_path: "working/normalized.blend"
+  runtime_glb_path: "runtime/model.glb"
+  license_path: "license/license.txt"
+  attribution_path: "license/attribution.txt"
+
+notes: ""

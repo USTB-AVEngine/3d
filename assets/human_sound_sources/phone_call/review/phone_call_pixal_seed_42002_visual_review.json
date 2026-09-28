@@ -1,0 +1,40 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "phone_call",
+  "seed": 42002,
+  "reviewed_at": "2026-09-21T10:55:00Z",
+  "decision": "conditional_accept",
+  "inputs": {
+    "glb_relative_path": "../pixal/pixal_seed_42002_v1/pixal_raw_1024.glb",
+    "glb_sha256": "1f97f0d37c8eee4d80cc25b96fef8c219cc053ac5826e8a833efb2a0b009edd9",
+    "structural_validation_relative_path": "../pixal/pixal_seed_42002_v1/pixal_structural_validation.json",
+    "structural_validation_sha256": "867ff66f70e9a7e68442ab7bf0433c42999d8f07e550c2454ef2c4df2af17ec7",
+    "turntable_sheet_relative_path": "turntable_corrected_42002.png",
+    "turntable_sheet_sha256": "6509016a66c69852e1b4d31e65ebc262e4bc9836284a633aef4933f8d2457dce",
+    "render_parameters": {
+      "brightness": 1.35,
+      "flip_texture_v": true,
+      "size": 640,
+      "texture_filter": "linear"
+    }
+  },
+  "checks": {
+    "human_form_readable": "passed",
+    "phone_call_pose_readable": "passed",
+    "attached_object_retained": "passed_with_artifacts",
+    "mouth_anchor_visually_localizable": "passed",
+    "phone_speaker_anchor_visually_localizable": "failed",
+    "multi_view_geometry_complete": "passed_with_artifacts",
+    "texture_quality": "passed"
+  },
+  "conditions": [
+    "Use the mouth anchor for the visible person's speech event.",
+    "Do not publish a precise remote phone_speaker anchor from this raw mesh."
+  ],
+  "residual_risks": [
+    "The phone is fused with the hand and face.",
+    "The texture requires the glTF-correct vertical orientation in custom OpenGL renderers.",
+    "EXT_texture_webp support remains unverified in Habitat."
+  ],
+  "next_gate": "standardization_decimation_and_habitat_level_0"
+}

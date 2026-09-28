@@ -1,0 +1,57 @@
+schema_version: "1.0"
+batch_id: "human_sound_source_assets_v1"
+status: "pixal3d_in_progress"
+route: "flux2_to_isnet_to_pixal3d"
+
+server_paths:
+  avengine_code: "/data/lx/code/spear"
+  pixal3d_code: "/data/lx/code/Pixal3D"
+  python: "/data/lx/conda-envs/avengine-3dgen/bin/python"
+  output_root: "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1"
+  output_root_manifest_status: "not_verified"
+
+input_contract:
+  image_format_before_segmentation: "TBD_SERVER_CODE"
+  pixal3d_input_format: "RGBA image"
+  resolution: "TBD_SERVER_CODE"
+  foreground_instances: 1
+  required_content: "one full human plus one sound-related prop in an unambiguous sound-producing pose"
+
+output_contract:
+  raw_file_name: "pixal_raw_1024.glb"
+  target_level: "level_1_static_semantic_asset"
+  rig_expected: false
+  animation_expected: false
+  preserve_raw_output: true
+
+generation_order:
+  - "guitar_player"
+  - "singer_microphone"
+  - "phone_call"
+  - "violin_player"
+  - "pianist"
+
+categories:
+  - id: "singer_microphone"
+    plan: "singer_microphone/generation_plan.yaml"
+    metadata: "singer_microphone/metadata/asset_metadata.yaml"
+  - id: "phone_call"
+    plan: "phone_call/generation_plan.yaml"
+    metadata: "phone_call/metadata/asset_metadata.yaml"
+  - id: "guitar_player"
+    plan: "guitar_player/generation_plan.yaml"
+    metadata: "guitar_player/metadata/asset_metadata.yaml"
+  - id: "violin_player"
+    plan: "violin_player/generation_plan.yaml"
+    metadata: "violin_player/metadata/asset_metadata.yaml"
+  - id: "pianist"
+    plan: "pianist/generation_plan.yaml"
+    metadata: "pianist/metadata/asset_metadata.yaml"
+
+execution:
+  image_generation: "completed_5_of_5"
+  segmentation: "completed_5_of_5"
+  pixal3d: "completed_4_of_5_singer_1024_oom_low_vram_retry_ready"
+  glb_validation: "completed_4_of_5"
+  corrected_visual_review: "completed_4_of_5"
+  standardization: "completed_4_of_5_singer_pending"

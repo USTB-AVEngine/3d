@@ -1,0 +1,20 @@
+# Large generated 3D payloads stay in the server-side asset archive.
+*.glb
+
+# Reproducible segmentation intermediates are not part of the lightweight repo.
+assets/human_sound_sources/*/segmentation/**/alpha_isnet.png
+assets/human_sound_sources/*/segmentation/**/input_rgba_isnet.png
+
+# Singer assets are explicitly outside this 10-asset release.
+assets/human_sound_sources/singer_microphone/
+assets/human_sound_sources/human_singer_microphone_001/
+assets/human_sound_sources/_inspection/
+
+# Local and server execution artifacts.
+*.log
+*.pid
+*.logpath
+output/
+tmp/
+__pycache__/
+*.pyc

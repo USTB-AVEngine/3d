@@ -1,0 +1,36 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "hand_drum_player",
+  "instance_id": "hand_drum_player_flux2_seed_43003_v1",
+  "reviewed_at": "2026-09-28T02:54:17.3577924Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "9ac424beb8ce464c1e9901fa3cdd5fcff6b931959cc1dd4a27a622788307ce0a",
+    "foreground_fraction_at_128": 0.30539608001708984,
+    "foreground_bbox_xyxy": [205, 43, 792, 1024]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/segmentation/isnet_seed_43003_v1/input_rgba_isnet.png",
+    "sha256": "bf9fa65b702f1ca6c9f081c6edf1a2713d0cc751780befe5e2c642063d0946ec",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "head_and_raised_hands_preserved": "passed",
+    "djembe_body_and_drumhead_preserved": "passed",
+    "seated_playing_pose_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "conditions": [
+    "The foreground bounding box reaches the lower image boundary; inspect boots and stool feet in the turntable render.",
+    "The djembe, legs and stool create a dense central silhouette that may merge during single-view reconstruction."
+  ],
+  "pixal_parameters": {
+    "resolution": 1024,
+    "manual_fov": 0.2,
+    "low_vram": true,
+    "seed": 43003
+  },
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

@@ -1,0 +1,37 @@
+{
+  "backend": "pixal3d",
+  "dino": {
+    "revision": "3c276edd87d6f6e569ff0c4400e086807d0f3881",
+    "snapshot": "/data/models/hub/models--camenduru--dinov3-vitl16-pretrain-lvd1689m/snapshots/3c276edd87d6f6e569ff0c4400e086807d0f3881"
+  },
+  "input": {
+    "alpha_max": 255,
+    "alpha_min": 0,
+    "mode": "RGBA",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/segmentation/isnet_seed_42005_v1/input_rgba_isnet.png",
+    "sha256": "5a92fa3ac6a2a414b6a2d124f443a6ac02c2dc68ccb39db415ef9748d63f7f2c",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  "model": {
+    "revision": "0b31f9160aa400719af409098bff7936a932f726",
+    "snapshot": "/data/models/hub/models--TencentARC--Pixal3D/snapshots/0b31f9160aa400719af409098bff7936a932f726"
+  },
+  "output": {
+    "bytes": 35866704,
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/pixal/pixal_seed_42005_v1/pixal_raw_1024.glb",
+    "sha256": "9476fc523bdaa42ba8ad41478eb5dcb466027cc455f06726e5cf5eb245144a5a"
+  },
+  "parameters": {
+    "low_vram": false,
+    "manual_fov": 0.2,
+    "resolution": 1024,
+    "seed": 42005
+  },
+  "timings": {
+    "inference_seconds": 314.1128743314184,
+    "total_before_manifest_seconds": 314.2744505479932
+  }
+}

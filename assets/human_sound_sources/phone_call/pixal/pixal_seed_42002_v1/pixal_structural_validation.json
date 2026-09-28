@@ -1,0 +1,18 @@
+{
+  "asset_id": "phone_call",
+  "glb": {
+    "mode": "0660",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/pixal/pixal_seed_42002_v1/pixal_raw_1024.glb",
+    "relative_path": "pixal_raw_1024.glb",
+    "sha256": "1f97f0d37c8eee4d80cc25b96fef8c219cc053ac5826e8a833efb2a0b009edd9",
+    "size_bytes": 37604780
+  },
+  "image_count": 2,
+  "material_count": 1,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "schema": "human_sound_source_pixal_structural_validation_v1",
+  "seed": 42002,
+  "status": "passed",
+  "texture_count": 2
+}

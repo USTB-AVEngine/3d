@@ -1,0 +1,38 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "saxophone_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/generation/flux2_seed_43001_v1/candidate.png",
+    "sha256": "213351c00c6b015d98b0016f872bbcc8c9c48fa0e8e7419458b21b19d73debd8",
+    "size_bytes": 1411298
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/generation/flux2_seed_43001_v1/generation_manifest.json",
+    "sha256": "708081345bc291b37e27238dfc16315395de77fbf075e309151fba52155fbde5"
+  },
+  "reviewed_at": "2026-09-27T14:44:08.4807112Z",
+  "decision": "approved_for_isnet",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "saxophone_complete": "passed",
+    "playing_action_unambiguous": "passed",
+    "mouthpiece_at_lips": "passed",
+    "both_hands_on_keys": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "anchors": {
+    "acoustic_anchor": "saxophone_bell_center",
+    "visual_cue_anchor": "mouthpiece_at_lips",
+    "fallback_anchor": "human_root"
+  },
+  "residual_risks": [
+    "Small saxophone keys, rods and guards may be simplified during single-view reconstruction.",
+    "Fingers overlap the keywork and require careful segmentation and later turntable review."
+  ],
+  "next_gate": "isnet_rgba_review"
+}

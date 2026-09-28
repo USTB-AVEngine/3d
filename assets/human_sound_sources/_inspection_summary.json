@@ -1,0 +1,262 @@
+[
+  {
+    "animation_count": 0,
+    "asset_generator": "https://github.com/mikedh/trimesh",
+    "camera_count": 0,
+    "declared_length": 38703756,
+    "default_scene": 0,
+    "extensions_required": [
+      "EXT_texture_webp"
+    ],
+    "extensions_used": [
+      "EXT_texture_webp"
+    ],
+    "glb_version": 2,
+    "image_count": 2,
+    "local_position_bounds": {
+      "available": true,
+      "extent": [
+        0.5226482450962067,
+        0.8984974026679993,
+        0.3617868721485138
+      ],
+      "maximum": [
+        0.267789363861084,
+        0.4537997841835022,
+        0.16334986686706543
+      ],
+      "minimum": [
+        -0.2548588812351227,
+        -0.44469761848449707,
+        -0.19843700528144836
+      ],
+      "note": "Accessor-local bounds; node transforms are reported separately."
+    },
+    "material_count": 1,
+    "mesh_count": 1,
+    "node_count": 2,
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\guitar_player\\pixal\\pixal_seed_42003_v1\\pixal_raw_1024.glb",
+    "primitive_count": 1,
+    "primitives": [
+      {
+        "attributes": [
+          "NORMAL",
+          "POSITION",
+          "TEXCOORD_0"
+        ],
+        "extensions": [],
+        "material_index": 0,
+        "mesh_index": 0,
+        "mode": 4,
+        "primitive_index": 0,
+        "triangle_count": 979446,
+        "vertex_count": 708945
+      }
+    ],
+    "scene_count": 1,
+    "schema": "avengine_glb_structure_inspection_v1",
+    "sha256": "fbbfe1a32cd0684e07f53c0830c004a8519919b04d6191fea48b090524ee6e80",
+    "size_bytes": 38703756,
+    "skin_count": 0,
+    "status": "passed",
+    "texture_count": 2,
+    "transformed_node_count": 0,
+    "triangle_count_sum": 979446,
+    "vertex_count_sum": 708945
+  },
+  {
+    "animation_count": 0,
+    "asset_generator": "https://github.com/mikedh/trimesh",
+    "camera_count": 0,
+    "declared_length": 37604780,
+    "default_scene": 0,
+    "extensions_required": [
+      "EXT_texture_webp"
+    ],
+    "extensions_used": [
+      "EXT_texture_webp"
+    ],
+    "glb_version": 2,
+    "image_count": 2,
+    "local_position_bounds": {
+      "available": true,
+      "extent": [
+        0.333586648106575,
+        0.9058887362480164,
+        0.3470885753631592
+      ],
+      "maximum": [
+        0.16652020812034607,
+        0.4535769820213318,
+        0.17980407178401947
+      ],
+      "minimum": [
+        -0.16706643998622894,
+        -0.45231175422668457,
+        -0.1672845035791397
+      ],
+      "note": "Accessor-local bounds; node transforms are reported separately."
+    },
+    "material_count": 1,
+    "mesh_count": 1,
+    "node_count": 2,
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\phone_call\\pixal\\pixal_seed_42002_v1\\pixal_raw_1024.glb",
+    "primitive_count": 1,
+    "primitives": [
+      {
+        "attributes": [
+          "NORMAL",
+          "POSITION",
+          "TEXCOORD_0"
+        ],
+        "extensions": [],
+        "material_index": 0,
+        "mesh_index": 0,
+        "mode": 4,
+        "primitive_index": 0,
+        "triangle_count": 985711,
+        "vertex_count": 718777
+      }
+    ],
+    "scene_count": 1,
+    "schema": "avengine_glb_structure_inspection_v1",
+    "sha256": "1f97f0d37c8eee4d80cc25b96fef8c219cc053ac5826e8a833efb2a0b009edd9",
+    "size_bytes": 37604780,
+    "skin_count": 0,
+    "status": "passed",
+    "texture_count": 2,
+    "transformed_node_count": 0,
+    "triangle_count_sum": 985711,
+    "vertex_count_sum": 718777
+  },
+  {
+    "animation_count": 0,
+    "asset_generator": "https://github.com/mikedh/trimesh",
+    "camera_count": 0,
+    "declared_length": 35866704,
+    "default_scene": 0,
+    "extensions_required": [
+      "EXT_texture_webp"
+    ],
+    "extensions_used": [
+      "EXT_texture_webp"
+    ],
+    "glb_version": 2,
+    "image_count": 2,
+    "local_position_bounds": {
+      "available": true,
+      "extent": [
+        0.8833875954151154,
+        0.8910341858863831,
+        0.8222828805446625
+      ],
+      "maximum": [
+        0.44795385003089905,
+        0.4535897970199585,
+        0.5001424551010132
+      ],
+      "minimum": [
+        -0.4354337453842163,
+        -0.43744438886642456,
+        -0.3221404254436493
+      ],
+      "note": "Accessor-local bounds; node transforms are reported separately."
+    },
+    "material_count": 1,
+    "mesh_count": 1,
+    "node_count": 2,
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\pianist\\pixal\\pixal_seed_42005_v1\\pixal_raw_1024.glb",
+    "primitive_count": 1,
+    "primitives": [
+      {
+        "attributes": [
+          "NORMAL",
+          "POSITION",
+          "TEXCOORD_0"
+        ],
+        "extensions": [],
+        "material_index": 0,
+        "mesh_index": 0,
+        "mode": 4,
+        "primitive_index": 0,
+        "triangle_count": 924514,
+        "vertex_count": 639799
+      }
+    ],
+    "scene_count": 1,
+    "schema": "avengine_glb_structure_inspection_v1",
+    "sha256": "9476fc523bdaa42ba8ad41478eb5dcb466027cc455f06726e5cf5eb245144a5a",
+    "size_bytes": 35866704,
+    "skin_count": 0,
+    "status": "passed",
+    "texture_count": 2,
+    "transformed_node_count": 0,
+    "triangle_count_sum": 924514,
+    "vertex_count_sum": 639799
+  },
+  {
+    "animation_count": 0,
+    "asset_generator": "https://github.com/mikedh/trimesh",
+    "camera_count": 0,
+    "declared_length": 37174112,
+    "default_scene": 0,
+    "extensions_required": [
+      "EXT_texture_webp"
+    ],
+    "extensions_used": [
+      "EXT_texture_webp"
+    ],
+    "glb_version": 2,
+    "image_count": 2,
+    "local_position_bounds": {
+      "available": true,
+      "extent": [
+        0.47207416594028473,
+        0.8937878906726837,
+        0.43710678815841675
+      ],
+      "maximum": [
+        0.24119879305362701,
+        0.4539337754249573,
+        0.22563216090202332
+      ],
+      "minimum": [
+        -0.23087537288665771,
+        -0.43985411524772644,
+        -0.21147462725639343
+      ],
+      "note": "Accessor-local bounds; node transforms are reported separately."
+    },
+    "material_count": 1,
+    "mesh_count": 1,
+    "node_count": 2,
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\violin_player\\pixal\\pixal_seed_42004_v1\\pixal_raw_1024.glb",
+    "primitive_count": 1,
+    "primitives": [
+      {
+        "attributes": [
+          "NORMAL",
+          "POSITION",
+          "TEXCOORD_0"
+        ],
+        "extensions": [],
+        "material_index": 0,
+        "mesh_index": 0,
+        "mode": 4,
+        "primitive_index": 0,
+        "triangle_count": 952204,
+        "vertex_count": 696916
+      }
+    ],
+    "scene_count": 1,
+    "schema": "avengine_glb_structure_inspection_v1",
+    "sha256": "8630ece04204d934598437f43d8b4f439a7739e206b540c50dede7ecf2bc122a",
+    "size_bytes": 37174112,
+    "skin_count": 0,
+    "status": "passed",
+    "texture_count": 2,
+    "transformed_node_count": 0,
+    "triangle_count_sum": 952204,
+    "vertex_count_sum": 696916
+  }
+]

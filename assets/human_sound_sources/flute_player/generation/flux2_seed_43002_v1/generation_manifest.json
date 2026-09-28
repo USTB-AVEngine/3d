@@ -1,0 +1,38 @@
+{
+  "asset_id": "flute_player",
+  "created_at": "2026-09-27T17:01:45.841357+00:00",
+  "effective_prompt": "A single poised East Asian female flutist in her late twenties with a low braided bun, actively playing one silver concert flute, full body visible from head to feet, eye-level three-quarter front view, flute held horizontally across the body with the embouchure hole correctly aligned at her lips, both hands naturally placed on the keywork, elbows raised with comfortable separation from the torso, complete straight flute visible from headjoint to footjoint with strong contrast. She wears a fitted emerald jacquard blouse with subtle embroidered cuffs, high-waisted black tailored trousers, matte black low-heel ankle boots, a narrow black waist belt, a small jade hairpin and tiny pearl stud earrings. Refined realistic textile detail without loose fabric, balanced standing performance posture, soft neutral three-point studio lighting, plain warm light-gray background, centered complete person and flute with clear margins, photorealistic, high detail, natural anatomy. Avoid: multiple people, generic middle-aged man, black T-shirt, merely holding flute, flute away from lips, recorder, clarinet, missing flute end, bent flute, broken tube, cropped instrument, low contrast instrument, seated pose, music stand, long earrings, loose necklace, long scarf, transparent clothing, cropped head, cropped feet, extra limbs, extra fingers, fused hands, fused flute, deformed anatomy, room interior, stage, audience, text, logo, watermark, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, generic middle-aged man, black T-shirt, merely holding flute, flute away from lips, recorder, clarinet, missing flute end, bent flute, broken tube, cropped instrument, low contrast instrument, seated pose, music stand, long earrings, loose necklace, long scarf, transparent clothing, cropped head, cropped feet, extra limbs, extra fingers, fused hands, fused flute, deformed anatomy, room interior, stage, audience, text, logo, watermark, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43002_v1/candidate.png",
+    "sha256": "789444ec0c099bec6f5b2e8e72c08658c65a6c12137b7336c49865a9060d4a1b",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1286412
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/flute_player/generation/flux2_seed_43002_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single poised East Asian female flutist in her late twenties with a low braided bun, actively playing one silver concert flute, full body visible from head to feet, eye-level three-quarter front view, flute held horizontally across the body with the embouchure hole correctly aligned at her lips, both hands naturally placed on the keywork, elbows raised with comfortable separation from the torso, complete straight flute visible from headjoint to footjoint with strong contrast. She wears a fitted emerald jacquard blouse with subtle embroidered cuffs, high-waisted black tailored trousers, matte black low-heel ankle boots, a narrow black waist belt, a small jade hairpin and tiny pearl stud earrings. Refined realistic textile detail without loose fabric, balanced standing performance posture, soft neutral three-point studio lighting, plain warm light-gray background, centered complete person and flute with clear margins, photorealistic, high detail, natural anatomy.",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "9a85e3ee1c6d4a3070d91b7e5b59e3abdc93fba75947789b6b44031077e8961b"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 43002,
+  "status": "pending_visual_review"
+}

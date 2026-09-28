@@ -1,0 +1,42 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "saxophone_player",
+  "seed": 43001,
+  "reviewed_at": "2026-09-28T00:00:00+08:00",
+  "decision": "accept_with_conditions",
+  "source": {
+    "glb_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/pixal/pixal_seed_43001_v1/pixal_raw_1024.glb",
+    "glb_sha256": "023e2301285be28b55da1c47f033ec155653f7dd76bbb456ca164ec101cb2d06",
+    "structural_validation_sha256": "bcc6373171719c54130ca3e1534d791447101e015aa2f31328cc8c031afcb338"
+  },
+  "turntable": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/review/glb_turntable_corrected_seed_43001_v1/turntable_sheet.png",
+    "sha256": "33c3743510201d6b3428bbfbff12b8896b36fbddceea393318890ddb6b812ad2",
+    "render_manifest_sha256": "b1d2104549990dc397ca13fa84e24eddf42af8d373d8f3002ecfc45d5ef92168",
+    "texture_flip_v": true,
+    "texture_filter": "linear"
+  },
+  "geometry": {
+    "vertex_count": 709176,
+    "triangle_count": 958236,
+    "mesh_count": 1,
+    "material_count": 1,
+    "texture_count": 2
+  },
+  "checks": {
+    "identity_and_wardrobe_readable": "passed",
+    "full_body_complete": "passed",
+    "playing_pose_readable": "passed",
+    "saxophone_body_and_bell_present": "passed",
+    "mouthpiece_relation_readable": "passed",
+    "four_view_texture_consistency": "passed",
+    "texture_noise_absent": "passed",
+    "hands_and_keywork": "passed_with_condition"
+  },
+  "conditions": [
+    "Small saxophone keys and rods are simplified.",
+    "Fingers partially merge with the keywork and require protection during decimation.",
+    "The instrument is naturally occluded by the torso in rear views."
+  ],
+  "next_gate": "runtime_standardization_then_habitat_level_0"
+}

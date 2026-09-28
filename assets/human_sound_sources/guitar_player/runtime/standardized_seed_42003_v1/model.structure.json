@@ -1,0 +1,65 @@
+{
+  "animation_count": 0,
+  "asset_generator": "https://github.com/mikedh/trimesh",
+  "camera_count": 0,
+  "declared_length": 38704176,
+  "default_scene": 0,
+  "extensions_required": [
+    "EXT_texture_webp"
+  ],
+  "extensions_used": [
+    "EXT_texture_webp"
+  ],
+  "glb_version": 2,
+  "image_count": 2,
+  "local_position_bounds": {
+    "available": true,
+    "extent": [
+      0.5226482450962067,
+      0.8984974026679993,
+      0.3617868721485138
+    ],
+    "maximum": [
+      0.267789363861084,
+      0.4537997841835022,
+      0.16334986686706543
+    ],
+    "minimum": [
+      -0.2548588812351227,
+      -0.44469761848449707,
+      -0.19843700528144836
+    ],
+    "note": "Accessor-local bounds; node transforms are reported separately."
+  },
+  "material_count": 1,
+  "mesh_count": 1,
+  "node_count": 3,
+  "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\guitar_player\\runtime\\standardized_seed_42003_v1\\model.glb",
+  "primitive_count": 1,
+  "primitives": [
+    {
+      "attributes": [
+        "NORMAL",
+        "POSITION",
+        "TEXCOORD_0"
+      ],
+      "extensions": [],
+      "material_index": 0,
+      "mesh_index": 0,
+      "mode": 4,
+      "primitive_index": 0,
+      "triangle_count": 979446,
+      "vertex_count": 708945
+    }
+  ],
+  "scene_count": 1,
+  "schema": "avengine_glb_structure_inspection_v1",
+  "sha256": "7a3756cc4c6ec6e501c167218e59bb4ab65cd2a9285cd1e28a967f497be7c479",
+  "size_bytes": 38704176,
+  "skin_count": 0,
+  "status": "passed",
+  "texture_count": 2,
+  "transformed_node_count": 1,
+  "triangle_count_sum": 979446,
+  "vertex_count_sum": 708945
+}

@@ -1,0 +1,32 @@
+{
+  "backend": "egl",
+  "bounds": [
+    [
+      -0.2548588812351227,
+      -0.44469761848449707,
+      -0.19843700528144836
+    ],
+    [
+      0.267789363861084,
+      0.4537997841835022,
+      0.16334986686706543
+    ]
+  ],
+  "glb": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/pixal/pixal_seed_42003_v1/pixal_raw_1024.glb",
+  "schema": "avengine_glb_turntable_render_v1",
+  "sheet": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/review/glb_turntable_bright_seed_42003_v1/turntable_sheet.png",
+  "size": 640,
+  "status": "passed",
+  "texture_size": [
+    4096,
+    4096
+  ],
+  "triangle_count": 979446,
+  "vertex_count": 708945,
+  "views": [
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/review/glb_turntable_bright_seed_42003_v1/front.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/review/glb_turntable_bright_seed_42003_v1/right.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/review/glb_turntable_bright_seed_42003_v1/back.png",
+    "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/review/glb_turntable_bright_seed_42003_v1/left.png"
+  ]
+}

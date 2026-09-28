@@ -1,0 +1,38 @@
+{
+  "asset_id": "coughing_person",
+  "created_at": "2026-09-28T05:50:50.225140+00:00",
+  "effective_prompt": "A single young Middle Eastern man in his mid-twenties with short curly hair and light stubble, captured in an unmistakable coughing action, full body visible from head to feet, eye-level three-quarter front view, torso leaning slightly forward, one elbow bent with a loosely closed hand held a few centimeters in front of his open mouth without hiding the whole face, the other hand resting against the upper chest, eyes slightly narrowed, natural balanced stance. He wears a dark fitted denim jacket over an ochre hooded sweatshirt, tapered gray chinos, clean white leather sneakers, a simple sports watch, a small silver ear stud, and a compact canvas cross-body bag worn close against his back with its strap flat across the torso. Realistic layered streetwear detail, clear separation between arm, face and torso, soft neutral three-point studio lighting, plain warm light-gray background, centered complete subject with clear margins, photorealistic, high detail, natural anatomy. Avoid: multiple people, generic middle-aged man, black T-shirt, yawning, sneezing into tissue, shouting, laughing, smoking, drinking, hand fully covering face, fist fused into mouth, both hands at face, medical mask, long necklace, loose bag, dangling strap, loose scarf, cropped head, cropped feet, extra limbs, extra fingers, fused hand, deformed anatomy, room interior, hospital, stage, audience, text, logo, watermark, motion blur.",
+  "model": {
+    "local_files_only": true,
+    "name": "black-forest-labs/FLUX.2-klein-4B",
+    "revision": "e7b7dc27f91deacad38e78976d1f2b499d76a294",
+    "snapshot": "/data/models/hub/models--black-forest-labs--FLUX.2-klein-4B/snapshots/e7b7dc27f91deacad38e78976d1f2b499d76a294"
+  },
+  "negative_prompt": "multiple people, generic middle-aged man, black T-shirt, yawning, sneezing into tissue, shouting, laughing, smoking, drinking, hand fully covering face, fist fused into mouth, both hands at face, medical mask, long necklace, loose bag, dangling strap, loose scarf, cropped head, cropped feet, extra limbs, extra fingers, fused hand, deformed anatomy, room interior, hospital, stage, audience, text, logo, watermark, motion blur",
+  "output": {
+    "mode": "RGB",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/generation/flux2_seed_43006_v1/candidate.png",
+    "sha256": "db00ce4eeec3c9989ca9878c9671ac8a8a45ed181866be1639348aaadbae7fdd",
+    "size": [
+      1024,
+      1024
+    ],
+    "size_bytes": 1428403
+  },
+  "output_root": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/generation/flux2_seed_43006_v1",
+  "parameters": {
+    "guidance_scale": 1.0,
+    "height": 1024,
+    "max_sequence_length": 512,
+    "num_inference_steps": 28,
+    "width": 1024
+  },
+  "prompt": "A single young Middle Eastern man in his mid-twenties with short curly hair and light stubble, captured in an unmistakable coughing action, full body visible from head to feet, eye-level three-quarter front view, torso leaning slightly forward, one elbow bent with a loosely closed hand held a few centimeters in front of his open mouth without hiding the whole face, the other hand resting against the upper chest, eyes slightly narrowed, natural balanced stance. He wears a dark fitted denim jacket over an ochre hooded sweatshirt, tapered gray chinos, clean white leather sneakers, a simple sports watch, a small silver ear stud, and a compact canvas cross-body bag worn close against his back with its strap flat across the torso. Realistic layered streetwear detail, clear separation between arm, face and torso, soft neutral three-point studio lighting, plain warm light-gray background, centered complete subject with clear margins, photorealistic, high detail, natural anatomy.",
+  "runner": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_tools/run_human_flux2_batch.py",
+    "sha256": "9a85e3ee1c6d4a3070d91b7e5b59e3abdc93fba75947789b6b44031077e8961b"
+  },
+  "schema": "human_sound_source_flux2_candidate_v1",
+  "seed": 43006,
+  "status": "pending_visual_review"
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "saxophone_player_flux2_seed_43001_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/generation/flux2_seed_43001_v1/candidate.png",
+      "candidate_sha256": "213351c00c6b015d98b0016f872bbcc8c9c48fa0e8e7419458b21b19d73debd8",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/segmentation/isnet_seed_43001_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/saxophone_player/segmentation/isnet_seed_43001_v1/input_rgba_isnet.png"
+    }
+  ]
+}

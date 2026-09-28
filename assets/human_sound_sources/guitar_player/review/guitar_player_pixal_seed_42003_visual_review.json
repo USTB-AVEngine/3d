@@ -1,0 +1,37 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "guitar_player",
+  "seed": 42003,
+  "reviewed_at": "2026-09-21T10:55:00Z",
+  "decision": "accept",
+  "inputs": {
+    "glb_relative_path": "../pixal/pixal_seed_42003_v1/pixal_raw_1024.glb",
+    "glb_sha256": "fbbfe1a32cd0684e07f53c0830c004a8519919b04d6191fea48b090524ee6e80",
+    "structural_validation_relative_path": "../pixal/pixal_seed_42003_v1/pixal_structural_validation.json",
+    "structural_validation_sha256": "c2902d7f5c18af60d04d27609d02d54ed982eb9d5189114c6a5d6e0b1c356324",
+    "turntable_sheet_relative_path": "turntable_corrected_42003.png",
+    "turntable_sheet_sha256": "1d9dd2a58c03d2cd1bf52e1ed1e63f4e141df01158b753d8ac5c3eed6002eb9d",
+    "render_parameters": {
+      "brightness": 1.35,
+      "flip_texture_v": true,
+      "size": 640,
+      "texture_filter": "linear"
+    }
+  },
+  "checks": {
+    "human_form_readable": "passed",
+    "playing_pose_readable": "passed",
+    "guitar_body_retained": "passed",
+    "guitar_neck_and_headstock_retained": "passed",
+    "acoustic_anchor_visually_localizable": "passed",
+    "multi_view_geometry_complete": "passed_with_artifacts",
+    "texture_quality": "passed"
+  },
+  "conditions": [],
+  "residual_risks": [
+    "There is localized body-to-instrument fusion.",
+    "The texture requires the glTF-correct vertical orientation in custom OpenGL renderers.",
+    "EXT_texture_webp support remains unverified in Habitat."
+  ],
+  "next_gate": "standardization_decimation_and_habitat_level_0"
+}

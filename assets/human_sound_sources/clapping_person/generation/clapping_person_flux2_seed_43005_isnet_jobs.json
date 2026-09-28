@@ -1,0 +1,12 @@
+{
+  "schema": "avengine_controlled_animal_isnet_jobs_v1",
+  "jobs": [
+    {
+      "instance_id": "clapping_person_flux2_seed_43005_v1",
+      "candidate_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/generation/flux2_seed_43005_v1/candidate.png",
+      "candidate_sha256": "fb6bec1009a7fa89fdc88aebc39e6c186c8cea570df8774d834d872641e25091",
+      "alpha_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/segmentation/isnet_seed_43005_v1/alpha_isnet.png",
+      "rgba_path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/clapping_person/segmentation/isnet_seed_43005_v1/input_rgba_isnet.png"
+    }
+  ]
+}

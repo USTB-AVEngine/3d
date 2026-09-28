@@ -1,0 +1,32 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "guitar_player",
+  "instance_id": "guitar_player_flux2_seed_42003_v1",
+  "reviewed_at": "2026-09-21T03:05:00Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "f8887808d84a989c92550108d205c6df270ddf3f0bad40aa370a5f5766cae0e0",
+    "foreground_fraction_at_128": 0.21277427673339844,
+    "foreground_bbox_xyxy": [258, 46, 814, 998]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/guitar_player/segmentation/isnet_seed_42003_v1/input_rgba_isnet.png",
+    "sha256": "e951e92469d3f354e2aa5b84c3ca041cd9b286c731a155239c96b49aa4575a53",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "guitar_body_preserved": "passed",
+    "guitar_neck_and_headstock_preserved": "passed",
+    "both_playing_hands_preserved": "passed",
+    "feet_complete": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "The guitar body overlaps the torso and may reconstruct as one connected surface.",
+    "Individual strings and tuning hardware are below reliable reconstruction scale."
+  ],
+  "pixal_parameters": {"resolution": 1024, "manual_fov": 0.2, "low_vram": false, "seed": 42003},
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

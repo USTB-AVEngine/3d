@@ -1,0 +1,37 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "megaphone_speaker",
+  "instance_id": "megaphone_speaker_flux2_seed_43004_v1",
+  "reviewed_at": "2026-09-28T03:42:48.3069059Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "54dd552e8dae026f734c68f6baedc38a9c31cb642333c6b6754a76c032292b54",
+    "foreground_fraction_at_128": 0.17853260040283203,
+    "foreground_bbox_xyxy": [316, 38, 642, 1013]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/megaphone_speaker/segmentation/isnet_seed_43004_v1/input_rgba_isnet.png",
+    "sha256": "42c3c6ec7aeb3ef003747378e5c0478f4c6515e498b0df0938bf3c9b3aecf8d0",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "head_and_feet_complete": "passed",
+    "megaphone_bell_and_body_preserved": "passed",
+    "mouthpiece_relation_preserved": "passed",
+    "both_hands_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "The two hands overlap near the megaphone handle and may partially merge.",
+    "Thin trigger and handle details may be simplified during reconstruction."
+  ],
+  "pixal_parameters": {
+    "resolution": 1024,
+    "manual_fov": 0.2,
+    "low_vram": true,
+    "seed": 43004
+  },
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

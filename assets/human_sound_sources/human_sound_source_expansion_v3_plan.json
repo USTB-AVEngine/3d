@@ -1,0 +1,109 @@
+{
+  "schema": "human_sound_source_expansion_plan_v3",
+  "status": "ready_for_sequential_generation",
+  "batch_id": "human_sound_source_expansion_v3",
+  "seed_range": "43001-43006",
+  "generation_policy": {
+    "mode": "one_asset_at_a_time",
+    "review_gate": "A candidate must pass identity, clothing, action, prop completeness, hands, feet, silhouette, and anchor readability checks before ISNet.",
+    "preserve_existing_assets": true,
+    "overwrite_existing_outputs": false
+  },
+  "shared_visual_contract": {
+    "human_count": 1,
+    "style": "photorealistic full-body studio reference",
+    "background": "plain warm light gray",
+    "lighting": "soft neutral three-point studio lighting",
+    "camera": "eye-level three-quarter front view",
+    "framing": "complete person and complete sound-related object with margin on every side",
+    "silhouette": "arms, hands, legs and prop edges separated wherever physically plausible",
+    "accessory_policy": "Use two or three attached, reconstruction-friendly accessories; avoid loose chains, long scarves, dangling tassels and transparent materials."
+  },
+  "assets": [
+    {
+      "order": 1,
+      "asset_id": "saxophone_player",
+      "seed": 43001,
+      "identity": "A confident Black man in his late fifties with short salt-and-pepper hair and a neatly trimmed gray beard",
+      "wardrobe": "tailored deep burgundy velvet blazer with visible lapels and brass buttons, ivory band-collar shirt, charcoal pleated trousers, polished dark brown leather shoes",
+      "accessories": "dark saxophone neck strap, folded patterned pocket square, simple metal wristwatch",
+      "sound_event": "instrument.alto_saxophone",
+      "acoustic_anchor": "center of saxophone bell opening",
+      "secondary_anchor": "mouthpiece at lips",
+      "pixal_risk": "medium",
+      "review_focus": ["mouthpiece touches lips", "both hands on keys", "bell and neck fully visible", "neck strap stays connected", "no merged fingers"]
+    },
+    {
+      "order": 2,
+      "asset_id": "flute_player",
+      "seed": 43012,
+      "identity": "A poised East Asian woman in her late twenties with a low braided bun",
+      "wardrobe": "fitted emerald jacquard blouse with subtle embroidered cuffs, high-waisted black tailored trousers, matte black low-heel ankle boots",
+      "accessories": "small jade hairpin, tiny pearl stud earrings, narrow black waist belt",
+      "sound_event": "instrument.concert_flute",
+      "acoustic_anchor": "open end of the flute footjoint",
+      "secondary_anchor": "embouchure hole at lips",
+      "pixal_risk": "high",
+      "review_focus": ["entire flute visible", "flute perfectly horizontal at mouth level", "flute contrasts with clothing", "embouchure plate touches lower lip", "both raised hands on separate key regions", "straight unbroken thin silver tube"],
+      "attempt_history": [
+        {
+          "seed": 43002,
+          "decision": "rejected_before_isnet",
+          "reason": "The generated instrument was diagonal and recorder-like at chest level, away from the mouth, so the image did not depict active transverse-flute playing."
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "asset_id": "hand_drum_player",
+      "seed": 43003,
+      "identity": "A warm South Asian man in his mid-thirties with wavy dark hair and a short beard",
+      "wardrobe": "open indigo block-print overshirt over a fitted cream cotton T-shirt, tapered olive trousers, brown leather ankle boots",
+      "accessories": "single wooden bead bracelet, woven djembe shoulder strap resting against the drum, simple round stool",
+      "sound_event": "instrument.djembe",
+      "acoustic_anchor": "center of djembe drumhead",
+      "secondary_anchor": "striking palm contact region",
+      "pixal_risk": "medium",
+      "review_focus": ["one palm contacts drumhead", "second hand raised above rim", "complete drum body and stool", "feet visible", "hands not fused with rim"]
+    },
+    {
+      "order": 4,
+      "asset_id": "megaphone_speaker",
+      "seed": 43004,
+      "identity": "A determined Latina woman in her early forties with shoulder-length dark wavy hair tied back",
+      "wardrobe": "mustard utility jacket with structured pockets over a cream ribbed top, navy cargo trousers, dark red lace-up ankle boots",
+      "accessories": "compact belt pouch, rectangular wristwatch, short patterned neck scarf tucked securely inside the jacket collar",
+      "sound_event": "human.speech.amplified",
+      "acoustic_anchor": "center of megaphone bell opening",
+      "secondary_anchor": "open mouth at megaphone mouthpiece",
+      "pixal_risk": "low",
+      "review_focus": ["mouth at mouthpiece", "complete cone and handle", "free hand gesture", "scarf fully tucked", "no protest sign or text"]
+    },
+    {
+      "order": 5,
+      "asset_id": "clapping_person",
+      "seed": 43005,
+      "identity": "A cheerful East Asian woman in her late sixties with short silver hair",
+      "wardrobe": "textured plum cardigan over a muted floral blouse, straight dark navy trousers, burgundy leather loafers",
+      "accessories": "small oval brooch, tiny gold stud earrings, slim wristwatch",
+      "sound_event": "human.clapping",
+      "acoustic_anchor": "midpoint between both palms",
+      "secondary_anchor": "upper torso gesture center",
+      "pixal_risk": "medium",
+      "review_focus": ["palms face each other with a small visible gap", "all fingers readable", "hands remain separate from torso", "both feet visible", "gesture clearly reads as clapping"]
+    },
+    {
+      "order": 6,
+      "asset_id": "coughing_person",
+      "seed": 43006,
+      "identity": "A young Middle Eastern man in his mid-twenties with short curly hair and light stubble",
+      "wardrobe": "dark denim jacket over an ochre hooded sweatshirt, tapered gray chinos, clean white leather sneakers",
+      "accessories": "canvas cross-body bag worn close against the back, simple sports watch, small silver ear stud",
+      "sound_event": "human.coughing",
+      "acoustic_anchor": "mouth",
+      "secondary_anchor": "covering hand near mouth",
+      "pixal_risk": "medium",
+      "review_focus": ["bent elbow and hand clearly near mouth", "face remains partially visible", "other hand rests on chest", "bag lies against back", "pose reads as coughing rather than yawning"]
+    }
+  ]
+}

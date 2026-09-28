@@ -1,0 +1,18 @@
+{
+  "asset_id": "pianist",
+  "glb": {
+    "mode": "0660",
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/pianist/pixal/pixal_seed_42005_v1/pixal_raw_1024.glb",
+    "relative_path": "pixal_raw_1024.glb",
+    "sha256": "9476fc523bdaa42ba8ad41478eb5dcb466027cc455f06726e5cf5eb245144a5a",
+    "size_bytes": 35866704
+  },
+  "image_count": 2,
+  "material_count": 1,
+  "mesh_count": 1,
+  "primitive_count": 1,
+  "schema": "human_sound_source_pixal_structural_validation_v1",
+  "seed": 42005,
+  "status": "passed",
+  "texture_count": 2
+}

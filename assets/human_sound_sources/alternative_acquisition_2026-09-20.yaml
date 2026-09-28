@@ -1,0 +1,118 @@
+schema_version: "1.0"
+phase: "3.1-C Alternative Acquisition"
+checked_at: "2026-09-20T12:33:47+08:00"
+status: "blocked_external_network_gate"
+source_file_obtained: false
+checksum_sha256: null
+
+rules_applied:
+  search_summary_accepted_as_evidence: false
+  unknown_mirror_allowed: false
+  checksum_without_local_file_allowed: false
+  blender_install_allowed_before_source: false
+
+network_attempt:
+  method: "public web search for an official asset page with direct file and license"
+  request_reached_search_provider: false
+  result: "blocked_before_request"
+  failure_layer: "network_approval_review"
+  detail: "HTTP 503 from the external approval reviewer. This is not a response from any asset platform."
+
+platform_checks:
+  - platform: "Mixamo"
+    official_page_verified_this_run: false
+    candidate_admitted: false
+    reason: "External access did not run; account/download terms and a concrete asset file could not be verified."
+  - platform: "BlendSwap"
+    official_page_verified_this_run: false
+    candidate_admitted: false
+    reason: "External access did not run; no official asset page, file, and license tuple was verified."
+  - platform: "Free3D"
+    official_page_verified_this_run: false
+    candidate_admitted: false
+    reason: "External access did not run; no official asset page, file, and license tuple was verified."
+  - platform: "CGTrader"
+    official_page_verified_this_run: false
+    candidate_admitted: false
+    reason: "External access did not run; no free product archive and product-specific license were verified."
+  - platform: "Sketchfab"
+    official_page_verified_this_run: false
+    candidate_admitted: false
+    reason: "Previously verified candidates remain platform-listed as downloadable, but no official source file was obtained locally."
+
+local_inventory:
+  roots_checked:
+    - "C:/Users/17738/Downloads"
+    - "C:/Users/17738/Desktop"
+    - "C:/Users/17738/Documents"
+  total_3d_files: 4
+  human_sound_source_candidates: 0
+  excluded_files:
+    - "cat_british_shorthair.glb"
+    - "dog_corgi.glb"
+    - "dog_shiba.glb"
+    - "pixal_raw_1024.glb"
+  exclusion_reason: "Animal assets do not satisfy the requested human sound-source category."
+
+level_1_static_semantic_assessment:
+  feasible: true
+  acceptance_scope: "human + required prop + unambiguous sound-producing pose + authored sound anchor"
+  animation_required: false
+  requirements_not_relaxed:
+    - "The original file must be obtained from an official or author-controlled source."
+    - "The asset-specific license must be recorded."
+    - "Human, prop, and sound-producing pose must be present in the same asset."
+    - "The local file size and SHA-256 must be measured."
+    - "Geometry and semantic relationships still require Blender inspection."
+  result_status: "route_approved_but_no_file_available"
+
+previously_verified_static_fallbacks:
+  - priority: 1
+    asset_name: "Melody Kaze Anime"
+    source_url: "https://sketchfab.com/3d-models/melody-kaze-anime-49a9f929b3454b89b03ace24dcc5bd91"
+    creator: "Ar3Designer"
+    license: "CC BY 4.0"
+    format: "platform glTF export; original source format unknown"
+    rig_status: "unknown"
+    animation_status: "unknown"
+    semantic_evidence: "Official asset preview previously showed a human holding a microphone near the mouth."
+    download_availability: "platform-listed downloadable; original file not obtained"
+    local_verification_status: "not_started_source_missing"
+    checksum_sha256: null
+    level_1_assessment: "promising, pending official file acquisition"
+  - priority: 2
+    asset_name: "Jonathan Davis Inspired Rock Vocalist"
+    source_url: "https://sketchfab.com/3d-models/jonathan-davis-inspired-rock-vocalist-264a2ce5036a45e6b2addfe0e5fc4e55"
+    creator: "PixForge"
+    license: "CC BY 4.0"
+    format: "OBJ + MTL"
+    rig_status: false
+    animation_status: "none"
+    semantic_evidence: "Official asset page/preview previously showed a vocalist leaning into a microphone."
+    download_availability: "platform-listed downloadable; original file not obtained"
+    local_verification_status: "not_started_source_missing"
+    checksum_sha256: null
+    level_1_assessment: "semantically valid but high-cost fallback due to 1,875,394 platform-reported faces and likeness risk"
+  - priority: 3
+    asset_name: "Polina Plays The Violin"
+    source_url: "https://sketchfab.com/3d-models/polina-plays-the-violin-a8f97cec2ee54b91a2844a12b54595af"
+    creator: "Gnossiennes"
+    license: "CC BY 4.0"
+    format: "STL source description; platform glTF export"
+    rig_status: false
+    animation_status: "none"
+    semantic_evidence: "Official asset page/preview previously showed violin-at-shoulder and bow-at-strings posture."
+    download_availability: "platform-listed downloadable; original file not obtained"
+    local_verification_status: "not_started_source_missing"
+    checksum_sha256: null
+    level_1_assessment: "semantically valid but high-cost fallback due to 2,036,248 platform-reported faces and printable-statue construction"
+
+next_gate:
+  requirement: "At least one official GLB, FBX, or BLEND file must exist locally."
+  after_file_arrival:
+    - "Create assets/human_sound_sources/<asset_id>/source/ and metadata/."
+    - "Preserve the original file without modification."
+    - "Measure local file size."
+    - "Run Get-FileHash -Algorithm SHA256."
+    - "Record download date and method."
+    - "Only then prepare Blender inspection."

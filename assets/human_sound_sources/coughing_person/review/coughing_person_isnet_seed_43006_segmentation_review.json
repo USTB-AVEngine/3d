@@ -1,0 +1,37 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "coughing_person",
+  "instance_id": "coughing_person_flux2_seed_43006_v1",
+  "reviewed_at": "2026-09-28T06:11:12.0109209Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "1fb02e0c4a6a3d30c21140f7c285839f1336138e645ea66b90075855a0715b13",
+    "foreground_fraction_at_128": 0.17280960083007812,
+    "foreground_bbox_xyxy": [328, 44, 677, 1011]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/coughing_person/segmentation/isnet_seed_43006_v1/input_rgba_isnet.png",
+    "sha256": "af97c1b286231dee326d718beb457972bb14fd246e2885b91dd8fb94ecf123d5",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "head_and_feet_complete": "passed",
+    "open_mouth_and_nearby_hand_preserved": "passed",
+    "second_hand_and_bag_preserved": "passed",
+    "coughing_pose_preserved": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "The fist is close to the mouth and may locally merge during reconstruction.",
+    "The bag, strap and jacket overlap and may become a single connected surface."
+  ],
+  "pixal_parameters": {
+    "resolution": 1024,
+    "manual_fov": 0.2,
+    "low_vram": true,
+    "seed": 43006
+  },
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

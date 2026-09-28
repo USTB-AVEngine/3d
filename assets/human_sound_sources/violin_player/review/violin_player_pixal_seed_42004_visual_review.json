@@ -1,0 +1,39 @@
+{
+  "schema": "human_sound_source_pixal_visual_review_v1",
+  "asset_id": "violin_player",
+  "seed": 42004,
+  "reviewed_at": "2026-09-21T10:55:00Z",
+  "decision": "accept_with_conditions",
+  "inputs": {
+    "glb_relative_path": "../pixal/pixal_seed_42004_v1/pixal_raw_1024.glb",
+    "glb_sha256": "8630ece04204d934598437f43d8b4f439a7739e206b540c50dede7ecf2bc122a",
+    "structural_validation_relative_path": "../pixal/pixal_seed_42004_v1/pixal_structural_validation.json",
+    "structural_validation_sha256": "812328c08a69e9f0845d4605097bfdf00ec4a11e195825a7a09c6e84561b30c3",
+    "turntable_sheet_relative_path": "turntable_corrected_42004.png",
+    "turntable_sheet_sha256": "09194fdac304c2ab87ce4b16584ba7e644d67575aafd469a0276475cc3bde244",
+    "render_parameters": {
+      "brightness": 1.35,
+      "flip_texture_v": true,
+      "size": 640,
+      "texture_filter": "linear"
+    }
+  },
+  "checks": {
+    "human_form_readable": "passed",
+    "playing_pose_readable": "passed",
+    "violin_retained": "passed",
+    "bow_retained": "passed_with_artifacts",
+    "acoustic_anchor_visually_localizable": "passed",
+    "multi_view_geometry_complete": "passed_with_artifacts",
+    "texture_quality": "passed"
+  },
+  "conditions": [
+    "Preserve the thin bow during decimation and recheck it after standardization."
+  ],
+  "residual_risks": [
+    "The bow is mildly warped and vulnerable to decimation damage.",
+    "The texture requires the glTF-correct vertical orientation in custom OpenGL renderers.",
+    "EXT_texture_webp support remains unverified in Habitat."
+  ],
+  "next_gate": "standardization_decimation_and_habitat_level_0"
+}

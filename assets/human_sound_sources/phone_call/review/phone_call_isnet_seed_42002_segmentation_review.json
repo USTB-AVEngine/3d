@@ -1,0 +1,30 @@
+{
+  "schema": "human_sound_source_segmentation_review_v1",
+  "asset_id": "phone_call",
+  "instance_id": "phone_call_flux2_seed_42002_v1",
+  "reviewed_at": "2026-09-21T03:05:00Z",
+  "decision": "approved_for_pixal3d",
+  "alpha": {
+    "sha256": "5cdf6e03699ddbca96ced2448b57119bc665f4cf051984ef33544bf65b2f0db3",
+    "foreground_fraction_at_128": 0.17417335510253906,
+    "foreground_bbox_xyxy": [338, 33, 695, 1010]
+  },
+  "rgba": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/phone_call/segmentation/isnet_seed_42002_v1/input_rgba_isnet.png",
+    "sha256": "3d19528830050b6fd6bf524bf41fa6a0c44c059eae43874735dc269916b66844",
+    "mode": "RGBA",
+    "size": [1024, 1024]
+  },
+  "checks": {
+    "human_silhouette_complete": "passed",
+    "smartphone_preserved": "passed",
+    "phone_hand_face_relation_preserved": "passed",
+    "feet_complete": "passed",
+    "background_removed": "passed"
+  },
+  "residual_risks": [
+    "The phone, hand and cheek form a compact connected region and may fuse in reconstruction."
+  ],
+  "pixal_parameters": {"resolution": 1024, "manual_fov": 0.2, "low_vram": false, "seed": 42002},
+  "next_gate": "pixal3d_glb_structural_and_visual_review"
+}

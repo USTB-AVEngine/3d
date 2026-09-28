@@ -1,0 +1,56 @@
+schema_version: "1.0"
+asset_id: "hssa_violin_player_v001"
+category: "violin_player"
+status: "planned_not_generated"
+
+image_generation:
+  model_family: "Flux2"
+  prompt_format: "plain_english_positive_prompt"
+  prompt_version: "v1"
+  prompt: >-
+    Full-body realistic studio image of one adult violinist actively playing a violin, violin securely positioned
+    between the left shoulder and chin, left hand fingers pressing the violin fingerboard, right hand holding a complete
+    bow with the bow hair visibly contacting the violin string region, elbows raised in a natural performance posture,
+    focused expression, balanced standing pose, natural human proportions, both hands and both feet visible,
+    three-quarter front view showing the violin body, neck, scroll and the full diagonal bow, entire person, violin and
+    bow inside the frame, clean light-gray studio background, soft even lighting, sharp focus, clear connected foreground
+    silhouette, no music stand, no chair, no extra person, no text, no logo, no cropped bow or body parts, no motion blur.
+  separate_negative_prompt_supported: "TBD_SERVER_CODE"
+  candidate_count: 12
+
+expected_visual_attributes:
+  human_count: 1
+  pose: "active bowing posture with shoulder/chin support"
+  attached_object: "one violin and one complete bow"
+  interaction: "left hand on fingerboard and bow crossing string region"
+  camera: "three-quarter front, full body, complete bow visible"
+  segmentation_unit: "human, violin, and bow in one foreground mask"
+
+rejection_criteria:
+  - "violin not supported at shoulder/chin"
+  - "bow not contacting or crossing the string region"
+  - "bow, scroll, hand, or violin body cropped or missing"
+  - "bow disappears into clothing/background or hands merge into instrument"
+  - "music stand, chair, extra person, text, or logos"
+
+pixal3d_risk:
+  level: "very_high"
+  critical_regions: ["bow", "bow-string contact", "violin neck", "left fingers", "chin rest"]
+  notes: "The long thin bow and dense hand/instrument overlap are likely failure points for both ISNet and Pixal3D."
+
+sound_anchors:
+  acoustic_anchor:
+    id: "violin_body"
+    planned_type: "local_surface_point"
+    target_region: "violin body near bridge and f-holes"
+    directivity: "outward_from_violin_top"
+  visual_cue_anchor:
+    id: "bow_string_contact"
+    planned_type: "local_surface_point"
+    target_region: "bow contact region over strings"
+  fallback_anchor:
+    id: "asset_root"
+    planned_type: "asset_origin"
+
+metadata_path: "metadata/asset_metadata.yaml"
+

@@ -1,0 +1,219 @@
+{
+  "schema": "human_sound_source_generation_plan_v2",
+  "status": "planned_not_generated",
+  "run_authorized": false,
+  "design_goal": "Expand sound-producing human action and identity diversity while preserving clear single-view reconstruction cues.",
+  "reference": {
+    "paper": "Listen, See and Track: Spatio-Temporal Audio-Visual Sound Event Reasoning for Omni-Modal Language Models",
+    "figure": "Figure 2",
+    "visual_pattern": "Standalone human sources with visible sound-related objects and actions, later placed into simulated indoor scenes."
+  },
+  "shared_generation_constraints": {
+    "human_count": 1,
+    "framing": "complete person and complete sound-related object visible inside a 1024x1024 frame",
+    "camera": "three-quarter front or three-quarter side view selected to expose the action-object relation",
+    "background": "plain light gray studio background",
+    "lighting": "soft neutral studio lighting",
+    "reconstruction": "clear connected foreground silhouette with useful separation between limbs, torso and prop",
+    "style": "photorealistic",
+    "runtime_target": "static semantic GLB without required rig or animation"
+  },
+  "baseline_retention": {
+    "policy": "additive_only",
+    "replace_v1_assets": false,
+    "preserve_all_v1_assets": true,
+    "assets": [
+      {
+        "asset_id": "singer_microphone",
+        "seed": 42001,
+        "status": "queued_pixal3d"
+      },
+      {
+        "asset_id": "phone_call",
+        "seed": 42002,
+        "status": "queued_pixal3d"
+      },
+      {
+        "asset_id": "guitar_player",
+        "seed": 42003,
+        "status": "queued_pixal3d"
+      },
+      {
+        "asset_id": "violin_player",
+        "seed": 42004,
+        "status": "queued_pixal3d"
+      },
+      {
+        "asset_id": "pianist",
+        "seed": 42005,
+        "status": "queued_pixal3d"
+      }
+    ],
+    "note": "Visual identity similarity is a dataset diversity limitation, not a semantic rejection reason. V2 variants supplement these approved baselines and must use distinct asset IDs and output directories."
+  },
+  "reuse_existing": [
+    {
+      "asset_id": "singer_microphone",
+      "source_version": "v1",
+      "seed": 42001,
+      "reason": "The approved v1 singer is already female and has a strong open-mouth singing pose with a handheld microphone.",
+      "sound_event": "human.singing",
+      "acoustic_anchor": "mouth",
+      "visual_cue_anchor": "microphone_head"
+    }
+  ],
+  "identity_variants": [
+    {
+      "asset_id": "phone_call_young_woman_v2",
+      "priority": "A",
+      "seed": 53107,
+      "sound_event": "human.speech.phone_call",
+      "prompt": "A single young adult woman with short curly hair actively talking on a modern smartphone, full body visible from head to feet, three-quarter front view, smartphone pressed clearly against one ear, mouth visibly open mid-sentence, one hand gripping the phone and the free hand making a natural conversational gesture, upright balanced standing pose, fitted teal long-sleeve top, charcoal trousers and simple shoes, anatomically plausible hands, clear separation between arms and torso, neutral studio lighting, plain light gray background, centered complete subject occupying about seventy-five percent of the frame, photorealistic, high detail",
+      "negative_prompt": "multiple people, middle-aged man, texting, looking at phone screen, phone away from ear, closed mouth, headphones, handset, seated pose, cropped head, cropped feet, extra limbs, extra fingers, fused phone, fused hand, occluded face, furniture, room interior, text, logo, watermark, dramatic background, motion blur",
+      "expected_action": "phone at ear with visible speaking mouth",
+      "attached_object": "smartphone",
+      "acoustic_anchor": "mouth",
+      "secondary_anchor": "phone_speaker",
+      "pixal_risk": "high"
+    },
+    {
+      "asset_id": "guitar_player_older_woman_v2",
+      "priority": "A",
+      "seed": 64219,
+      "sound_event": "instrument.acoustic_guitar",
+      "prompt": "A single older adult woman with short silver hair actively playing a full-size acoustic guitar, full body visible from head to feet, three-quarter front view, guitar body resting naturally against the torso, right hand visibly strumming directly over the sound hole, left hand pressing the fretboard, complete guitar neck, headstock, strings, bridge and sound hole visible, focused performance posture, fitted burgundy shirt, dark trousers and simple shoes, anatomically plausible hands, neutral studio lighting, plain light gray background, centered complete person and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, middle-aged man, electric guitar, amplifier, guitar case, guitar stand, merely holding guitar, hands away from strings, incorrect hand placement, missing guitar neck, cropped guitar, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused hands, broken instrument, text, logo, watermark, stage, motion blur",
+      "expected_action": "one hand strumming at sound hole and one hand fretting",
+      "attached_object": "acoustic_guitar",
+      "acoustic_anchor": "guitar_sound_hole",
+      "secondary_anchor": "strumming_region",
+      "pixal_risk": "high"
+    },
+    {
+      "asset_id": "violin_player_young_woman_v2",
+      "priority": "A",
+      "seed": 75331,
+      "sound_event": "instrument.violin",
+      "prompt": "A single young adult woman violinist with dark braided hair actively playing a violin, full body visible from head to feet, three-quarter front view, violin correctly supported beneath the chin on the left shoulder, left hand pressing the fingerboard, right hand holding one complete straight bow visibly contacting the strings near the bridge, unmistakable performance posture, complete violin body, neck, scroll and bow visible, fitted navy blouse, gray trousers and simple shoes, strong edge contrast around the bow, neutral studio lighting, plain light gray background, centered complete person and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, middle-aged man, viola, cello, guitar, violin case, merely holding violin, bow missing, broken bow, bow away from strings, incorrect pose, cropped bow, cropped violin, cropped head, cropped feet, seated pose, extra limbs, extra fingers, fused instrument, music stand, text, logo, watermark, stage, motion blur",
+      "expected_action": "violin beneath chin with bow contacting strings",
+      "attached_object": "violin_and_bow",
+      "acoustic_anchor": "violin_body_near_bridge",
+      "secondary_anchor": "bow_string_contact",
+      "pixal_risk": "very_high"
+    },
+    {
+      "asset_id": "pianist_young_woman_v2",
+      "priority": "B",
+      "seed": 86443,
+      "sound_event": "instrument.piano",
+      "prompt": "A single young adult woman actively playing a compact upright acoustic piano, complete seated person, bench and entire piano visible in one frame, three-quarter side view, both hands clearly placed on the keyboard in a natural playing position, eyes directed toward the keys, both feet and all piano pedals visible, clear keyboard, upright piano body and soundboard enclosure, unmistakable performance posture, fitted mustard long-sleeve top, dark trousers and simple shoes, neutral studio lighting, plain light gray background, isolated subject without room furnishings, photorealistic, high detail",
+      "negative_prompt": "multiple people, middle-aged man, grand piano, digital keyboard, synthesizer, standing person, hands away from keys, merely sitting beside piano, closed keyboard lid, missing hands, cropped person, cropped piano, cropped feet, extra limbs, extra fingers, fused hands, room interior, sheet music, text, logo, watermark, stage, motion blur",
+      "expected_action": "seated playing pose with both hands on keys",
+      "attached_object": "upright_acoustic_piano_and_bench",
+      "acoustic_anchor": "piano_soundboard",
+      "secondary_anchor": "keyboard_playing_region",
+      "pixal_risk": "very_high"
+    }
+  ],
+  "new_sound_actions": [
+    {
+      "asset_id": "saxophone_player_v2",
+      "priority": "A",
+      "seed": 97561,
+      "sound_event": "instrument.saxophone",
+      "prompt": "A single young adult male saxophonist actively playing an alto saxophone, full body visible from head to feet, three-quarter front view, mouth sealed around the mouthpiece, both hands correctly placed on the visible key groups, saxophone hanging naturally from a neck strap in front of the torso, complete bell, curved body, neck and mouthpiece visible, cheeks slightly engaged, balanced standing performance posture, fitted rust-red shirt, dark trousers and simple shoes, neutral studio lighting, plain light gray background, centered complete person and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, merely holding saxophone, mouth away from mouthpiece, missing bell, cropped instrument, trumpet, clarinet, extra instruments, seated pose, music stand, cropped head, cropped feet, extra limbs, extra fingers, fused hands, broken keys, text, logo, watermark, stage, motion blur",
+      "expected_action": "mouth on mouthpiece and both hands on saxophone keys",
+      "attached_object": "alto_saxophone",
+      "acoustic_anchor": "saxophone_bell",
+      "secondary_anchor": "mouthpiece",
+      "pixal_risk": "high"
+    },
+    {
+      "asset_id": "trumpet_player_v2",
+      "priority": "A",
+      "seed": 10873,
+      "sound_event": "instrument.trumpet",
+      "prompt": "A single adult woman actively playing a brass trumpet, full body visible from head to feet, three-quarter front view, trumpet mouthpiece pressed to the lips, instrument held horizontally with the complete bell facing diagonally away from the camera, right-hand fingers placed on the three valves and left hand supporting the tubing, cheeks slightly engaged, balanced standing performance posture, fitted forest-green shirt, black trousers and simple shoes, neutral studio lighting, plain light gray background, centered complete person and trumpet, photorealistic, high detail",
+      "negative_prompt": "multiple people, merely holding trumpet, mouth away from mouthpiece, trumpet pointed directly at camera, missing bell, cropped instrument, trombone, saxophone, music stand, seated pose, cropped head, cropped feet, extra limbs, extra fingers, fused hands, malformed tubing, text, logo, watermark, stage, motion blur",
+      "expected_action": "mouthpiece at lips with fingers on valves",
+      "attached_object": "trumpet",
+      "acoustic_anchor": "trumpet_bell",
+      "secondary_anchor": "mouthpiece",
+      "pixal_risk": "high"
+    },
+    {
+      "asset_id": "megaphone_speaker_v2",
+      "priority": "A",
+      "seed": 32003,
+      "sound_event": "human.speech.amplified",
+      "prompt": "A single young adult woman actively speaking through a handheld megaphone, full body visible from head to feet, three-quarter front view, megaphone mouthpiece held directly at her open mouth, large cone and handle fully visible in profile, one hand gripping the handle and the free hand making a restrained public-speaking gesture, upright balanced stance, fitted cobalt-blue jacket, dark trousers and simple shoes, anatomically plausible hands, neutral studio lighting, plain light gray background, centered complete person and megaphone, photorealistic, high detail",
+      "negative_prompt": "multiple people, merely carrying megaphone, megaphone away from mouth, closed mouth, microphone, speaker stand, cropped cone, cropped head, cropped feet, extra limbs, extra fingers, fused hand, fused megaphone, audience, protest sign, text, logo, watermark, room interior, stage, motion blur",
+      "expected_action": "open mouth at megaphone mouthpiece",
+      "attached_object": "handheld_megaphone",
+      "acoustic_anchor": "megaphone_bell",
+      "secondary_anchor": "mouth",
+      "pixal_risk": "medium"
+    },
+    {
+      "asset_id": "hand_drum_player_v2",
+      "priority": "A",
+      "seed": 43117,
+      "sound_event": "instrument.hand_drum",
+      "prompt": "A single adult musician actively playing one djembe hand drum, complete seated person, stool and drum visible in one frame, three-quarter front view, djembe held upright between the knees, one open hand visibly contacting the center of the drumhead and the other hand raised just above the rim for the next strike, unmistakable rhythmic performance posture, complete drumhead, rim and tapered drum body visible, fitted orange shirt, dark trousers and simple shoes, neutral studio lighting, plain light gray background, centered complete subject and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, drum kit, drumsticks, merely holding drum, both hands away from drumhead, missing drumhead, cropped drum, cropped hands, cropped head, cropped feet, extra limbs, extra fingers, fused hands, furniture other than simple stool, stage, text, logo, watermark, motion blur",
+      "expected_action": "one striking hand contacting drumhead and one hand prepared to strike",
+      "attached_object": "djembe_and_stool",
+      "acoustic_anchor": "drumhead_center",
+      "secondary_anchor": "striking_hand_contact",
+      "pixal_risk": "medium"
+    },
+    {
+      "asset_id": "accordion_player_v2",
+      "priority": "B",
+      "seed": 54229,
+      "sound_event": "instrument.accordion",
+      "prompt": "A single older adult man actively playing a piano accordion, full body visible from head to feet, three-quarter front view, accordion strapped securely to the chest, right hand placed on the piano keys, left hand operating the bass buttons, bellows visibly expanded between both halves, unmistakable performance posture, complete keyboard, button panel, straps and bellows visible, fitted light-blue shirt, dark trousers and simple shoes, neutral studio lighting, plain light gray background, centered complete person and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, merely carrying accordion, hands away from controls, bellows closed or missing, cropped accordion, cropped head, cropped feet, extra limbs, extra fingers, fused hands, broken keyboard, seated pose, music stand, text, logo, watermark, stage, motion blur",
+      "expected_action": "hands on keyboard and bass buttons with expanded bellows",
+      "attached_object": "piano_accordion",
+      "acoustic_anchor": "accordion_body_center",
+      "secondary_anchor": "bellows_center",
+      "pixal_risk": "high"
+    },
+    {
+      "asset_id": "flute_player_v2",
+      "priority": "B",
+      "seed": 21989,
+      "sound_event": "instrument.flute",
+      "prompt": "A single older adult male flutist actively playing a silver concert flute, full body visible from head to feet, three-quarter front view, flute held horizontally across the body with the embouchure hole correctly aligned at the lips, both hands placed on the keywork, elbows raised naturally, complete flute from headjoint to footjoint visible with strong contrast against clothing and background, fitted maroon shirt, dark trousers and simple shoes, balanced standing performance posture, neutral studio lighting, plain light gray background, centered complete person and instrument, photorealistic, high detail",
+      "negative_prompt": "multiple people, merely holding flute, flute away from lips, recorder, clarinet, missing flute end, cropped instrument, low contrast flute, seated pose, music stand, cropped head, cropped feet, extra limbs, extra fingers, fused hands, text, logo, watermark, stage, motion blur",
+      "expected_action": "flute at lips with both hands on keys",
+      "attached_object": "concert_flute",
+      "acoustic_anchor": "flute_open_end",
+      "secondary_anchor": "embouchure_region",
+      "pixal_risk": "very_high"
+    }
+  ],
+  "execution_policy": {
+    "current_state": "prompts_and_seeds_only",
+    "do_not_run_flux2": true,
+    "mode": "append_v2_without_overwriting_v1",
+    "first_generation_wave": [
+      "phone_call_young_woman_v2",
+      "guitar_player_older_woman_v2",
+      "violin_player_young_woman_v2",
+      "megaphone_speaker_v2",
+      "saxophone_player_v2",
+      "trumpet_player_v2",
+      "hand_drum_player_v2"
+    ],
+    "second_generation_wave": [
+      "pianist_young_woman_v2",
+      "accordion_player_v2",
+      "flute_player_v2"
+    ],
+    "promotion_gate": "Only candidates with unambiguous sound action, complete prop geometry and a clean connected silhouette may enter ISNet."
+  }
+}

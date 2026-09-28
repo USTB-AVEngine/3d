@@ -1,0 +1,91 @@
+schema_version: "1.0"
+asset_id: "hssa_phone_call_v001"
+batch_id: "human_sound_source_assets_v1"
+category: "human_sound_source"
+generation_status: "raw_glb_visual_review_complete"
+
+semantic:
+  sound_event: "human.speech.phone_call"
+  human_action: "talking_on_phone"
+  action_state: "performing"
+  semantic_verified: true
+  attached_object: "smartphone"
+
+provenance:
+  route: "Flux2 -> ISNet -> Pixal3D"
+  generation_plan: "../generation_plan.yaml"
+  prompt_version: "v1"
+  seed: 42002
+  input_image_path: "../source/phone_call_flux2_seed_42002_candidate.png"
+  rgba_image_path: "../segmentation/isnet_seed_42002_v1/input_rgba_isnet.png"
+  raw_glb_path: "../pixal/pixal_seed_42002_v1/pixal_raw_1024.glb"
+  raw_glb_sha256: "1f97f0d37c8eee4d80cc25b96fef8c219cc053ac5826e8a833efb2a0b009edd9"
+
+source_location:
+  default_anchor_id: "mouth"
+  anchors:
+    - anchor_id: "mouth"
+      role: "acoustic_anchor"
+      event_role: "visible_person_local_speech"
+      type: "local_surface_point"
+      target_region: "mouth center"
+      local_position_m: [null, null, null]
+      local_forward: [null, null, null]
+    - anchor_id: "phone_speaker"
+      role: "acoustic_anchor"
+      event_role: "remote_phone_voice"
+      type: "local_surface_point"
+      target_region: "smartphone earpiece/speaker"
+      local_position_m: [null, null, null]
+      local_forward: [null, null, null]
+    - anchor_id: "phone_body"
+      role: "visual_cue_anchor"
+      type: "local_surface_point"
+      target_region: "smartphone body center"
+      local_position_m: [null, null, null]
+    - anchor_id: "asset_root"
+      role: "fallback_anchor"
+      type: "asset_origin"
+      local_position_m: [0.0, 0.0, 0.0]
+
+animation:
+  present: false
+  rigged: false
+  runtime_mode: "static_pose"
+
+format:
+  pixal3d_input: "rgba_image"
+  raw_output: "glb"
+  raw_output_name: "pixal_raw_1024.glb"
+
+runtime:
+  standardized_glb_path: "../runtime/standardized_seed_42002_v1/model.glb"
+  standardized_glb_sha256: "6df91ad89a868f709f2ea7f03cc5af3bd1253836f552fadbee934d869b568d6f"
+  standardization_manifest_path: "../runtime/standardized_seed_42002_v1/model.manifest.json"
+  units: "meters"
+  up_axis: "+Y"
+  forward_axis: "-Z"
+  target_height_m: 1.75
+  bounds_m:
+    min: [-0.322212105541998, 0.0, -0.335253647926599]
+    max: [0.322212105541998, 1.75, 0.335253647926599]
+  geometry_preserved: true
+  material_metallic_factor: 0.0
+  material_roughness_factor: 0.8
+
+visual_review:
+  decision: "conditional_accept"
+  report_path: "../review/phone_call_pixal_seed_42002_visual_review.json"
+  conditions:
+    - "Use the mouth anchor for visible-person speech."
+    - "Do not publish a precise remote phone_speaker anchor from this raw mesh."
+
+license:
+  generated_asset_policy: "review_required"
+  model_terms_recorded: false
+
+poly_count: 985711
+vertex_count: 718777
+conversion_status: "standardized_pending_habitat_level_0"
+habitat_status: "not_tested"
+avengine_status: "not_registered"

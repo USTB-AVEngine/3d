@@ -1,0 +1,68 @@
+{
+  "asset_id": "phone_call",
+  "forward_axis": "-Z",
+  "geometry_preserved": true,
+  "output": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\phone_call\\runtime\\standardized_seed_42002_v1\\model.glb",
+    "sha256": "6df91ad89a868f709f2ea7f03cc5af3bd1253836f552fadbee934d869b568d6f",
+    "size_bytes": 37605200
+  },
+  "schema": "human_sound_source_glb_standardization_v1",
+  "source": {
+    "path": "C:\\Users\\17738\\Documents\\ChatGPT\\AVEngine\\assets\\human_sound_sources\\phone_call\\pixal\\pixal_seed_42002_v1\\pixal_raw_1024.glb",
+    "sha256": "1f97f0d37c8eee4d80cc25b96fef8c219cc053ac5826e8a833efb2a0b009edd9"
+  },
+  "standardization": {
+    "material_changes": [
+      {
+        "after": {
+          "metallicFactor": 0.0,
+          "roughnessFactor": 0.8
+        },
+        "before": {
+          "metallicFactor": 1.0,
+          "roughnessFactor": 1.0
+        },
+        "material_index": 0
+      }
+    ],
+    "normalized_bounds_m": {
+      "max": [
+        0.3222121055419981,
+        1.75,
+        0.3352536479265991
+      ],
+      "min": [
+        -0.3222121055419981,
+        0.0,
+        -0.33525364792659906
+      ]
+    },
+    "root_node_index": 2,
+    "scale": 1.9318045693426977,
+    "source_bounds": {
+      "max": [
+        0.16652020812034607,
+        0.4535769820213318,
+        0.17980407178401947
+      ],
+      "min": [
+        -0.16706643998622894,
+        -0.45231175422668457,
+        -0.1672845035791397
+      ]
+    },
+    "translation": [
+      0.0005276066072165613,
+      0.8737779135825205,
+      -0.01209267953219214
+    ]
+  },
+  "status": "passed",
+  "target_height_m": 1.75,
+  "texture_payloads_preserved": true,
+  "trailing_chunk_sha256": [
+    "cc32420af857f61603d5e1edb18c7301dbdd59b6d98c3170539d5e2773999573"
+  ],
+  "up_axis": "+Y"
+}

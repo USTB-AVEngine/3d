@@ -1,0 +1,36 @@
+{
+  "schema": "human_sound_source_visual_review_v1",
+  "asset_id": "hand_drum_player",
+  "candidate": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/generation/flux2_seed_43003_v1/candidate.png",
+    "sha256": "26198b4aa15e8bb1b9fa93b5fe9c547b4274170cc5ae3335f6c9d60fe9fc6cae",
+    "size_bytes": 1415379
+  },
+  "generation_manifest": {
+    "path": "/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/hand_drum_player/generation/flux2_seed_43003_v1/generation_manifest.json",
+    "sha256": "6f181e49ef1c1c543048218b601ae6744682c8c6eafb0055027295316365af9e"
+  },
+  "reviewed_at": "2026-09-28T02:47:05.6194053Z",
+  "decision": "approved_for_isnet_with_condition",
+  "checks": {
+    "single_person": "passed",
+    "full_body_uncropped": "passed",
+    "identity_diversity": "passed",
+    "wardrobe_and_accessories": "passed",
+    "djembe_complete": "passed",
+    "playing_action_readable": "passed",
+    "hands_anatomically_usable": "passed",
+    "background_suitable_for_segmentation": "passed",
+    "text_logo_watermark_absent": "passed"
+  },
+  "conditions": [
+    "Both palms are captured immediately above the drumhead rather than at visible contact, but the alternating hand-drumming action remains readable.",
+    "The drum, seat and legs form a dense central silhouette and require careful turntable review after reconstruction."
+  ],
+  "anchors": {
+    "acoustic_anchor": "djembe_drumhead_center",
+    "visual_cue_anchor": "midpoint_between_raised_palms_and_drumhead",
+    "fallback_anchor": "human_root"
+  },
+  "next_gate": "isnet_rgba_review"
+}
