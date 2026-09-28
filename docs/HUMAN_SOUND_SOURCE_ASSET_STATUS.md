@@ -22,6 +22,20 @@ explicitly configured.
 
 The singer asset is outside this release scope.
 
+## Preview Selection
+
+For the original four assets, use only these corrected review sheets:
+
+- `phone_call/review/turntable_corrected_42002.png`
+- `guitar_player/review/turntable_corrected_42003.png`
+- `violin_player/review/turntable_corrected_42004.png`
+- `pianist/review/turntable_corrected_42005.png`
+
+Legacy `glb_turntable_seed_*` and `glb_turntable_bright_seed_*` previews were
+rendered before the custom renderer applied the glTF-correct texture-V
+orientation. They are excluded from the repository going forward. The source
+and standardized GLB texture payloads were not modified by this preview issue.
+
 ## Server Archive
 
 - Archive: `/data/datasets/avengine_workspaces/users/lx/human_sound_source_assets_v1/_releases/human_sound_sources_10_v1_20260928.tar`

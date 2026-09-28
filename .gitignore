@@ -10,6 +10,12 @@ assets/human_sound_sources/singer_microphone/
 assets/human_sound_sources/human_singer_microphone_001/
 assets/human_sound_sources/_inspection/
 
+# Legacy previews rendered before the glTF texture-V correction.
+assets/human_sound_sources/*/review/glb_turntable_seed_*/
+assets/human_sound_sources/*/review/glb_turntable_bright_seed_*/
+assets/human_sound_sources/*/review/texture_test_native.png
+assets/human_sound_sources/*/review/texture_test_flipped.png
+
 # Local and server execution artifacts.
 *.log
 *.pid
